@@ -1,0 +1,230 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "iOS",
+  "BasePlatform": "iOS",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{3E9337A7-89F7-3FED-278F-6E4D24CBC9BF}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1253714356",
+       "Name": "_100Hz_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\_100Hz_EQ",
+       "GUID": "{11E5FDFC-8613-4F8F-80E4-360CEDC33FCA}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "1254754154",
+       "Name": "_2000Hz_Meter",
+       "ObjectPath": "\\Effects\\Default Work Unit\\_2000Hz_Meter",
+       "GUID": "{21210F4A-4A5F-4E62-8309-AF59CB514295}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "1279766737",
+       "Name": "_100Hz_Meter",
+       "ObjectPath": "\\Effects\\Default Work Unit\\_100Hz_Meter",
+       "GUID": "{A3446614-DEB9-4C09-B3E7-E61CA361A88D}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "2057961675",
+       "Name": "GainMute",
+       "ObjectPath": "\\Effects\\Default Work Unit\\GainMute",
+       "GUID": "{2BCFCFF7-157D-48B7-A0A3-551199498034}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "2478938044",
+       "Name": "_10000Hz_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\_10000Hz_EQ",
+       "GUID": "{FE661FAB-5218-43A2-8398-7BF9FE7B0384}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "2750473593",
+       "Name": "_10000Hz_Meter",
+       "ObjectPath": "\\Effects\\Default Work Unit\\_10000Hz_Meter",
+       "GUID": "{25AC2C5C-07E1-4A56-B49B-C8D8C89DF389}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "4136059669",
+       "Name": "_2000Hz_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\_2000Hz_EQ",
+       "GUID": "{D45F83D0-3F8E-412E-AF30-A4E60F3191FE}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{EA1B9F06-8CA7-4C00-B8A1-C5A474FFE6DB}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{187D2242-10C9-46F1-8189-AF6D660DF8B4}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "2095890355",
+      "Name": "_100Hz",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Spectrum Reading\\_100Hz",
+      "GUID": "{9C0FCDC5-EADD-4FA0-855D-FBFE2F1CCBB7}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1253714356"
+        },
+        {
+         "Id": "1279766737"
+        },
+        {
+         "Id": "2057961675"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2385944068",
+      "Name": "_2000Hz",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Spectrum Reading\\_2000Hz",
+      "GUID": "{42E1205D-2E23-46C8-8F1B-69D040D0D822}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1254754154"
+        },
+        {
+         "Id": "2057961675"
+        },
+        {
+         "Id": "4136059669"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "4027748891",
+      "Name": "_10000Hz",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Spectrum Reading\\_10000Hz",
+      "GUID": "{FCD0C15C-9A79-44AE-B7DC-431562ABD100}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2057961675"
+        },
+        {
+         "Id": "2478938044"
+        },
+        {
+         "Id": "2750473593"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2095890355",
+      "Name": "_100Hz",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\_100Hz",
+      "GUID": "{8FA0A7D9-B12D-4514-8883-209930481915}"
+     },
+     {
+      "Id": "2385944068",
+      "Name": "_2000Hz",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\_2000Hz",
+      "GUID": "{8E6069A4-EC52-4080-AE2C-DFA6C6964283}"
+     },
+     {
+      "Id": "4027748891",
+      "Name": "_10000Hz",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\_10000Hz",
+      "GUID": "{EA78D8CA-CED5-462D-BC50-F6E3E06BD6F1}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1786804762",
+      "Name": "Damage",
+      "ObjectPath": "\\States\\Default Work Unit\\Damage",
+      "GUID": "{FCD23F6C-09F1-47D0-8F06-873E8A1C32AC}",
+      "States": [
+       {
+        "Id": "678209053",
+        "Name": "Two",
+        "ObjectPath": "\\States\\Default Work Unit\\Damage\\Two",
+        "GUID": "{8659A86D-3CFF-48F1-8CAA-21930A65F22C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Damage\\None",
+        "GUID": "{A513E83D-9845-4BC1-A00B-AD0975FB4B3D}"
+       },
+       {
+        "Id": "912956111",
+        "Name": "Three",
+        "ObjectPath": "\\States\\Default Work Unit\\Damage\\Three",
+        "GUID": "{84FE0DC2-F374-434B-ACF4-7E200CDAE3EF}"
+       },
+       {
+        "Id": "1064933119",
+        "Name": "One",
+        "ObjectPath": "\\States\\Default Work Unit\\Damage\\One",
+        "GUID": "{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}"
+       },
+       {
+        "Id": "2611770117",
+        "Name": "Five",
+        "ObjectPath": "\\States\\Default Work Unit\\Damage\\Five",
+        "GUID": "{024C42E8-2B2D-4135-B3CE-787C20AC282E}"
+       },
+       {
+        "Id": "2863728729",
+        "Name": "Four",
+        "ObjectPath": "\\States\\Default Work Unit\\Damage\\Four",
+        "GUID": "{456A790A-9CD6-412D-8CDC-E3C343508C02}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2B2B5B23-30AF-A534-8C12-0931E68874F4}"
+ }
+}

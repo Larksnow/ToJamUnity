@@ -1,0 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1786804762	Damage			\Default Work Unit\Damage	
+
+State	ID	Name	State Group			Notes
+	678209053	Two	Damage			
+	748895195	None	Damage			
+	912956111	Three	Damage			
+	1064933119	One	Damage			
+	2611770117	Five	Damage			
+	2863728729	Four	Damage			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	2095890355	_100Hz			\Default Work Unit\Spectrum Reading\_100Hz	
+	2385944068	_2000Hz			\Default Work Unit\Spectrum Reading\_2000Hz	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	4027748891	_10000Hz			\Default Work Unit\Spectrum Reading\_10000Hz	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1253714356	_100Hz_EQ	Wwise Parametric EQ			
+	1254754154	_2000Hz_Meter	Wwise Meter			
+	1279766737	_100Hz_Meter	Wwise Meter			
+	2057961675	GainMute	Wwise Gain			
+	2478938044	_10000Hz_EQ	Wwise Parametric EQ			
+	2750473593	_10000Hz_Meter	Wwise Meter			
+	4136059669	_2000Hz_EQ	Wwise Parametric EQ			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
