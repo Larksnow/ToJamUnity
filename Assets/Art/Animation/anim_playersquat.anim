@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: anim_playerfall
+  m_Name: anim_playersquat
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 242501983417620084, guid: c700261b95f4d4a389f81da662fab053, type: 3}
+      value: {fileID: -5588776448679013682, guid: c700261b95f4d4a389f81da662fab053, type: 3}
+    - time: 0.05
+      value: {fileID: 4522441594936170816, guid: c700261b95f4d4a389f81da662fab053, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,13 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 242501983417620084, guid: c700261b95f4d4a389f81da662fab053, type: 3}
+    - {fileID: -5588776448679013682, guid: c700261b95f4d4a389f81da662fab053, type: 3}
+    - {fileID: 4522441594936170816, guid: c700261b95f4d4a389f81da662fab053, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.06666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

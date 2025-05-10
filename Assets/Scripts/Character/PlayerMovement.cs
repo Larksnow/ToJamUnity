@@ -8,6 +8,8 @@ public class PlayerMovement2D : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public float jumpDelay = 0.2f;
+
+    public float horizontalDampening = 0.5f;
     
     [Header("State")]
     [SerializeField] private bool _isGrounded;
