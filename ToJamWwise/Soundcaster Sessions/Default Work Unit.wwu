@@ -53,7 +53,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Four" ID="{456A790A-9CD6-412D-8CDC-E3C343508C02}"/>
+						<CurrentStateRef Name="Three" ID="{84FE0DC2-F374-434B-ACF4-7E200CDAE3EF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
