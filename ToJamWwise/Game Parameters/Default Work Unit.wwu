@@ -5,58 +5,72 @@
 			<ChildrenList>
 				<GameParameter Name="_80Hz" ID="{8FA0A7D9-B12D-4514-8883-209930481915}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="-36"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
-						<Property Name="Min" Type="Real64" Value="-36"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_140Hz" ID="{8E6069A4-EC52-4080-AE2C-DFA6C6964283}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="-36"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
-						<Property Name="Min" Type="Real64" Value="-36"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_220Hz" ID="{EA78D8CA-CED5-462D-BC50-F6E3E06BD6F1}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="-36"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
 						<Property Name="Max" Type="Real64" Value="0"/>
-						<Property Name="Min" Type="Real64" Value="-36"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_420Hz" ID="{6D81C268-0701-4B2E-879E-44318F0412A7}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_550Hz" ID="{BC99A65B-0DC5-4DDD-B54C-2EF692D2AE29}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_770Hz" ID="{9DEC2D12-7458-4FD8-877E-D2893E622A86}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_1000Hz" ID="{4520960F-3796-4BE7-96AC-7A5E4D0F81C2}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_2350Hz" ID="{B4898E1A-7BCA-4235-BD63-D7A7CF3CD4FC}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_5000Hz" ID="{C497F658-7F1B-46DE-A63E-C7760FAE56AD}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="_8100Hz" ID="{35A55F44-D8C0-40FF-B0C2-3EE2CABCE62D}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-18"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-18"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
