@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         SetDefaultParamters();
+        PostEvent("music");
     }
     // Initialize Wwise and cache common event IDs
     private void InitializeWwise()
@@ -46,14 +47,7 @@ public class AudioManager : MonoBehaviour
     }
 
     // Bank Management
-    private void LoadGlobalBanks()
-    {
-        AkBankManager.LoadBank(_initBankName, false, false); // Always required
-        foreach (var bank in _globalBanks)
-        {
-            AkBankManager.LoadBank(bank, false, false);
-        }
-    }
+    
 
     // Event Playback
     public void PostEvent(string eventName, GameObject target = null)
@@ -107,6 +101,16 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetRTPCValue(rtpcName, value, target ? target : gameObject);
     }
 
+    public float GetRTPCValue(string rtpcName)
+    {
+        float value = 0f;
+        int type = 1;
+        AkSoundEngine.GetRTPCValue( rtpcName, gameObject, 0, out value, ref type );
+        
+        return value;
+    }
+
+
     // Switch Control
     public void SetSwitch(string switchGroup, string switchState, GameObject target = null)
     {
@@ -127,5 +131,11 @@ public class AudioManager : MonoBehaviour
             AkSoundEngine.StopAll();
             // AkSoundEngine.ClearBanks();
         }
+    }
+
+    [ContextMenu("ChangeState")]
+    void ChangeState()
+    {
+        AudioManager.main.SetState("Damage", "Five");
     }
 }

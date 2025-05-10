@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     public float moveForce = 50f;         // How strong the input force is
     public float maxSpeed = 5f;           // Cap horizontal speed
     public float linearDrag = 4f;         // Drag to smooth out movement
-
+    public float bumpForce = 10f;         // Force applied when hitting a platform
     private Rigidbody2D rb;
     private float inputX;
 
@@ -28,5 +28,16 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector2.right * inputX * moveForce);
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        
+            var platform = collision.gameObject.GetComponent<Bar>(); // Reference your platform script
+            var rb = GetComponent<Rigidbody>();
+
+            // Only apply upward velocity if platform is moving up significantly
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, bumpForce, rb.linearVelocity.z);
+    
     }
 }
