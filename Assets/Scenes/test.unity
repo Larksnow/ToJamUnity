@@ -287,6 +287,7 @@ MonoBehaviour:
   moveForce: 50
   maxSpeed: 5
   linearDrag: 4
+  bumpForce: 10
 --- !u!1001 &180963447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1228,7 +1229,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 58ecfc8c34a3b1d4ba43b2a3053acdda, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 02a330fe76db83a49a40a5627c3e7955, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0

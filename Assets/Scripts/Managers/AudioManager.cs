@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         SetDefaultParamters();
-        PostEvent("music");
+        PostEvent("Play_Music");
     }
     // Initialize Wwise and cache common event IDs
     private void InitializeWwise()
