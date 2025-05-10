@@ -13,7 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
     } // namespace EVENTS
 
     namespace STATES
@@ -37,9 +37,16 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID _100HZ = 2095890355U;
-        static const AkUniqueID _2000HZ = 2385944068U;
-        static const AkUniqueID _10000HZ = 4027748891U;
+        static const AkUniqueID _80HZ = 571805146U;
+        static const AkUniqueID _140HZ = 943261999U;
+        static const AkUniqueID _220HZ = 3272834542U;
+        static const AkUniqueID _420HZ = 135639496U;
+        static const AkUniqueID _550HZ = 1125897900U;
+        static const AkUniqueID _770HZ = 246889828U;
+        static const AkUniqueID _1000HZ = 1782326689U;
+        static const AkUniqueID _2350HZ = 3984858204U;
+        static const AkUniqueID _5000HZ = 1054198269U;
+        static const AkUniqueID _8100HZ = 3308542171U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -50,9 +57,16 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID _100HZ = 2095890355U;
-        static const AkUniqueID _2000HZ = 2385944068U;
-        static const AkUniqueID _10000HZ = 4027748891U;
+        static const AkUniqueID _80HZ = 571805146U;
+        static const AkUniqueID _140HZ = 943261999U;
+        static const AkUniqueID _220HZ = 3272834542U;
+        static const AkUniqueID _420HZ = 135639496U;
+        static const AkUniqueID _550HZ = 1125897900U;
+        static const AkUniqueID _770HZ = 246889828U;
+        static const AkUniqueID _1000HZ = 1782326689U;
+        static const AkUniqueID _2350HZ = 3984858204U;
+        static const AkUniqueID _5000HZ = 1054198269U;
+        static const AkUniqueID _8100HZ = 3308542171U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 

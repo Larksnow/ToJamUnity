@@ -3,7 +3,7 @@
 	<Busses>
 		<WorkUnit Name="Spectrum Reading" ID="{FEE6950B-9D09-40E0-A609-5408AD9DFCE4}" OwnerID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}" PersistMode="Nested">
 			<ChildrenList>
-				<Bus Name="_100Hz" ID="{9C0FCDC5-EADD-4FA0-855D-FBFE2F1CCBB7}">
+				<Bus Name="_80Hz" ID="{9C0FCDC5-EADD-4FA0-855D-FBFE2F1CCBB7}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
@@ -16,7 +16,7 @@
 									<EffectSlot Name="" ID="{B6976D38-BD99-4C26-AC8A-860FF8C14E91}" ShortID="345865023">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="_100Hz_EQ" ID="{11E5FDFC-8613-4F8F-80E4-360CEDC33FCA}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+												<ObjectRef Name="_80Hz_EQ" ID="{11E5FDFC-8613-4F8F-80E4-360CEDC33FCA}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -27,7 +27,7 @@
 									<EffectSlot Name="" ID="{DEC77A20-DB93-4559-B2B0-7AE4AA2C0597}" ShortID="209450546">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-												<ObjectRef Name="_100Hz_Meter" ID="{A3446614-DEB9-4C09-B3E7-E61CA361A88D}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+												<ObjectRef Name="_80Hz_Meter" ID="{A3446614-DEB9-4C09-B3E7-E61CA361A88D}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -47,7 +47,7 @@
 						</ObjectList>
 					</ObjectLists>
 				</Bus>
-				<Bus Name="_2000Hz" ID="{42E1205D-2E23-46C8-8F1B-69D040D0D822}">
+				<Bus Name="_140Hz" ID="{42E1205D-2E23-46C8-8F1B-69D040D0D822}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
@@ -60,7 +60,7 @@
 									<EffectSlot Name="" ID="{68095C07-BEBC-4DEC-9ECE-8FD8A08DE638}" ShortID="650287073">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="_2000Hz_EQ" ID="{D45F83D0-3F8E-412E-AF30-A4E60F3191FE}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+												<ObjectRef Name="_140Hz_EQ" ID="{D45F83D0-3F8E-412E-AF30-A4E60F3191FE}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -71,7 +71,7 @@
 									<EffectSlot Name="" ID="{A90E22A5-677F-4E72-AFDC-7FDAA1E9F084}" ShortID="529599431">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-												<ObjectRef Name="_2000Hz_Meter" ID="{21210F4A-4A5F-4E62-8309-AF59CB514295}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+												<ObjectRef Name="_140Hz_Meter" ID="{21210F4A-4A5F-4E62-8309-AF59CB514295}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -91,7 +91,7 @@
 						</ObjectList>
 					</ObjectLists>
 				</Bus>
-				<Bus Name="_10000Hz" ID="{FCD0C15C-9A79-44AE-B7DC-431562ABD100}">
+				<Bus Name="_220Hz" ID="{FCD0C15C-9A79-44AE-B7DC-431562ABD100}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
@@ -104,7 +104,7 @@
 									<EffectSlot Name="" ID="{03F60505-B1A9-4984-A5E1-8726F9D58C43}" ShortID="916188554">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="_10000Hz_EQ" ID="{FE661FAB-5218-43A2-8398-7BF9FE7B0384}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+												<ObjectRef Name="_220Hz_EQ" ID="{FE661FAB-5218-43A2-8398-7BF9FE7B0384}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -115,7 +115,7 @@
 									<EffectSlot Name="" ID="{19D3A1E3-A09D-4500-B0C1-07D6F21DF025}" ShortID="553225693">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-												<ObjectRef Name="_10000Hz_Meter" ID="{25AC2C5C-07E1-4A56-B49B-C8D8C89DF389}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+												<ObjectRef Name="_220Hz_Meter" ID="{25AC2C5C-07E1-4A56-B49B-C8D8C89DF389}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -124,6 +124,314 @@
 							<Reference>
 								<Local>
 									<EffectSlot Name="" ID="{C774C8A9-1052-42CF-AA15-D1241C2EA121}" ShortID="492916058">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_420Hz" ID="{061F4617-7B3C-4E54-84CB-E1E8F6051924}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{3D4B7239-BFF4-43E0-9DCC-21CFF98C9BB3}" ShortID="13864900">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_420Hz_EQ" ID="{1AD4F6D0-D5B8-48B8-8E84-45107E9CC1CA}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{A10452F8-B864-49F3-B40D-765F8D5B7C20}" ShortID="517347902">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_420Hz_Meter" ID="{0191A386-BEAF-401C-B6EF-F5D3DE977A1C}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{485019D5-8ECD-45E5-B703-37659AECDC98}" ShortID="373874572">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_550Hz" ID="{520CFA9A-81A1-40C4-B3E4-C603319A13E5}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{B689D1A8-B594-43C5-81E2-FCACB475AA35}" ShortID="581164118">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_550Hz_EQ" ID="{DE205C8D-8ADC-4948-9AC3-E697991AF001}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{F53342E8-FC70-4C43-8661-B5F386E26004}" ShortID="601142144">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_550Hz_Meter" ID="{C454489A-133E-4D0C-A00E-5E69F067B774}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{F36936A8-E01E-45B1-AB89-D66D2E5B5EB0}" ShortID="118342926">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_1000Hz" ID="{610AA1B3-349A-4ADB-93AF-BAD7B383275F}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{466ACEAA-55EB-4196-9085-82055FAB9ED9}" ShortID="494797976">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_1000Hz_EQ" ID="{A253A71C-569C-429D-BFE1-3661A3937DA7}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{66637B37-30BE-4ABF-8051-52DB776F9979}" ShortID="747445533">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_1000Hz_Meter" ID="{CC39080A-4E5E-49C2-B6CB-0B5E0DC54BB4}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{AE0C4382-3473-4861-8105-F0054712FB6D}" ShortID="349533328">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_2350Hz" ID="{E99A1329-117B-4C47-9883-9BE133346E76}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{BFDEC942-5855-4492-A153-AB672C65C92A}" ShortID="210605663">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_2350Hz_EQ" ID="{A78A8118-BB9B-4372-96C6-C3D1E03ECC65}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{A4415DD1-4591-4D4E-B69F-5D21141C9B39}" ShortID="792834731">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_2350Hz_Meter" ID="{57FD154A-8372-4874-AC3B-D2EFD6EA2B69}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{7E083C24-1EC6-4A37-B673-893054B8FBA6}" ShortID="222494512">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_5000Hz" ID="{1DA09DB9-72B3-4CB1-B245-5728D02DCB56}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{78340AC9-3BB7-44CB-9F15-B143233A261D}" ShortID="788536780">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_5000Hz_EQ" ID="{B681AA77-0077-4356-B40B-1F13A0B43C0B}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{3924D151-2F3C-437D-9F63-91CE0D03E071}" ShortID="965760031">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_5000Hz_Meter" ID="{C3511591-FD27-447B-9F58-FD113FA3285A}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{28227589-6166-4BF4-A9F8-371E00581DCC}" ShortID="268627328">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_770Hz" ID="{FAE13F44-867B-4BAD-92DF-744457571ED0}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{DC9ADDA8-0E80-4BD3-AB28-42F8E6B0C683}" ShortID="540227417">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_770Hz_EQ" ID="{ECE9C502-CFD1-4C40-9590-E937222CAF3D}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{CF1FC664-B2C9-4636-891A-682D65FC1713}" ShortID="447665566">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_770Hz_Meter" ID="{975D7A26-216F-4959-821E-974C73056E5B}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{90E98490-AD0F-4BB3-8982-DA9E6630B1F3}" ShortID="363998468">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="_8100Hz" ID="{F980A219-41BD-4EEF-8165-ED385AE3CB19}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{187D2242-10C9-46F1-8189-AF6D660DF8B4}" WorkUnitID="{FECA3F96-99FD-480A-B980-EE8E9D2D5EDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{485A68E9-3812-4339-94EF-A20A41DF2901}" ShortID="487184827">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="_8100Hz_EQ" ID="{602AE4FE-2930-4652-84B8-7941B7C089DC}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{8E823BBB-756C-4CC3-B970-C253710324F3}" ShortID="1061103293">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+												<ObjectRef Name="_8100Hz_Meter" ID="{5C4043CF-C5C2-4730-B9E2-0D95B058A8B0}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{B2D12C3B-995A-4E40-9991-CE491F9FFFEE}" ShortID="185496787">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
 												<ObjectRef Name="GainMute" ID="{2BCFCFF7-157D-48B7-A0A3-551199498034}" WorkUnitID="{85179272-FB59-4EA5-A40B-50E027F9AB29}"/>
