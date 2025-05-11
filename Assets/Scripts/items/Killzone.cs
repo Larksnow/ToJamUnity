@@ -27,6 +27,7 @@ public class Killzone : MonoBehaviour
         }
 
         killzoneCollider.isTrigger = true;
+        killzoneCollider.enabled = false;
 
         if (filling != null)
         {
@@ -38,8 +39,8 @@ public class Killzone : MonoBehaviour
                 .OnComplete(() =>
                 {
                     isActive = true;
+                    ActivateKillzone();
                     Debug.Log("Killzone activated");
-
                     // Immediately play shake effect and destroy
                     transform.DOShakeScale(0.5f, 1.5f)
                              .OnComplete(() => Destroy(gameObject));
@@ -57,6 +58,14 @@ public class Killzone : MonoBehaviour
             fillingRenderer.color = frontColors[callerID];
     }
 
+    void ActivateKillzone()
+    {
+        isActive = true;
+        killzoneCollider.enabled = true; // Enable collider at the activation moment
+
+        // Now only players that ENTER after this moment will trigger OnTriggerEnter2D
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!isActive) return;
@@ -64,7 +73,7 @@ public class Killzone : MonoBehaviour
         Player player = other.GetComponent<Player>();
         if (player != null && player.playerID == targetID)
         {
-            Debug.Log("Player found and killed by trigger.");
+            Debug.Log("Player entered and was killed.");
             player.Die();
         }
     }

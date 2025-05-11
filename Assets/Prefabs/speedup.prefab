@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4086804067499631763}
   - component: {fileID: 7033612104903834613}
   - component: {fileID: 1832257323148298385}
+  - component: {fileID: 8397280683802404881}
   m_Layer: 0
   m_Name: speedup
   m_TagString: Untagged
@@ -138,3 +139,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.2}
   m_Radius: 2.5
+--- !u!114 &8397280683802404881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707816595887093784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b47d6bf2e8e0459bb1e585ca8c079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.2

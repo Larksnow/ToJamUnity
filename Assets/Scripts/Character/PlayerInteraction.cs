@@ -22,6 +22,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (index >= 0 && index < items.Count && items[index] != null)
         {
+            AudioManager.main.PostEvent("Play_UseItem");
             items[index].UseItem(player);
             items.RemoveAt(index);
         }

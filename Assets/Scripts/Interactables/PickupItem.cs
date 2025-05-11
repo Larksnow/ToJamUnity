@@ -11,6 +11,7 @@ public class PickupItem : MonoBehaviour
         if (playerInteraction != null && playerInteraction.items.Count < playerInteraction.maxHold)
         {
             playerInteraction.ItemPickUp(itemSo);
+            AudioManager.main.PostEvent("Play_PickUpItem");
             Destroy(gameObject); // Remove item from the scene
         }
     }
