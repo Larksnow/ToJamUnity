@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))]
 public class Bar : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    private BoxCollider2D boxCollider;
     public string rtpcName;
     public int index;
 
@@ -19,19 +20,25 @@ public class Bar : MonoBehaviour
     private float stepSize = 0.5f;     // distance per step
     private float minX = -10.5f;
     private float maxX = 10.5f;
+    
+    [Header("UpwardForce")]
+    private float exponent = 2.5f; // for acceleration curve
+    private float maxForce = 500.0f;  // this can move to player itself
+    private float localAccelerationFactor = 5.0f;
+    private float checkDistance = 0.1f;
 
     private float timer;
+    private float heightDelta = -1.0f;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        boxCollider = GetComponent<BoxCollider2D>();
         timer = stepInterval;
     }
 
     void FixedUpdate()
     {
-        Vector2 currentPos = rb.position;
+        Vector2 currentPos = transform.position;
 
         // --- Horizontal step: teleport X ---
         timer -= Time.fixedDeltaTime;
@@ -54,9 +61,10 @@ public class Bar : MonoBehaviour
         newY = DbToHeight(newY);
         // newY -= IndexToOffset(index);
         // newY = Mathf.Clamp(newY, minHeight, maxHeight);
-        Vector2 targetPos = new Vector2(rb.position.x, newY);
+        Vector2 targetPos = new Vector2(transform.position.x, newY);
 
-        rb.MovePosition(targetPos);
+        transform.position = targetPos;
+        heightDelta = newY - currentPos.y;
     }
 
     public float DbToHeight(float input)
@@ -75,5 +83,74 @@ public class Bar : MonoBehaviour
         float t = index / 9f;
 
         return Mathf.Lerp(0f, 3f, t);
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Debug.Log("Collision with: " + collision.gameObject.name + " pushDelta: " + heightDelta);
+        if (heightDelta > 0.0f)
+        {
+            Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();
+            if (otherRb != null)
+            {
+                otherRb.linearVelocityY = 0.0f;
+                float mappedHeight = Mathf.Pow(heightDelta, exponent) * Mathf.Abs(maxHeight);
+                float force = Mathf.Clamp(mappedHeight * otherRb.mass * localAccelerationFactor, 0, maxForce);
+                otherRb.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
+                Debug.Log("force: " + force);
+            }
+        }
+    }
+    
+    void CollectContactedInstance(float heightDelta)
+    {
+        Vector3 center = transform.position;
+        Vector3 size = boxCollider.size;
+        Vector3 upperEdgePosition = new Vector3(center.x, center.y + size.y / 2, center.z);
+        Vector3 extents = new Vector3(size.x / 2, 0.1f, 0.0f);
+        RaycastHit2D[] hitColliders = Physics2D.BoxCastAll(upperEdgePosition, extents, 0.0f, Vector2.up);
+        Debug.DrawLine(center, center + new Vector3(0, size.y / 2), Color.red, 2.0f);
+        
+        foreach (var raycast in hitColliders)
+        {
+            Collider2D collider = raycast.collider;
+            if (collider != null)
+            {
+                Rigidbody2D otherRb = collider.gameObject.GetComponent<Rigidbody2D>();
+                if (otherRb != null)
+                {
+                    //colliders.Add(otherRb);
+                }
+            }
+        }
+
+        /*
+        if (colliders.Count > 0)
+        {
+            pushDelta = heightDelta;
+        }
+        */
+    }
+
+    void RemoveContactedInstance(float heightDelta)
+    {
+        /*
+        foreach (var instance in colliders)
+        {
+            if (instance == null)
+            {
+                continue;
+            }
+            
+            // remove huge force on the contacted instances and apply another upward force on them.
+            instance.linearVelocityY = 0.0f;
+            float mappedHeight = Mathf.Pow(heightDelta, exponent) * Mathf.Abs(maxHeight);
+            float force = Mathf.Clamp(mappedHeight * instance.mass * localAccelerationFactor, 0, maxForce);
+            instance.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
+            Debug.Log("Pushing object: " + instance.gameObject.name + " with force: " + force);
+        }
+        
+        colliders.Clear();
+        */
     }
 }
