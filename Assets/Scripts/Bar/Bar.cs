@@ -5,7 +5,9 @@ public class Bar : MonoBehaviour
 {
     private Rigidbody2D rb;
     public string rtpcName;
+    private bool colorMode1 = false;
     public int index;
+    private SpriteRenderer spriteRenderer;
 
     [Header("Vertical Mapping")]
     private float minDb = -18f;
@@ -27,6 +29,7 @@ public class Bar : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
         timer = stepInterval;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -54,6 +57,15 @@ public class Bar : MonoBehaviour
         newY = DbToHeight(newY);
         // newY -= IndexToOffset(index);
         // newY = Mathf.Clamp(newY, minHeight, maxHeight);
+        if (colorMode1)
+        {
+            HeightToColor1(newY);
+        }
+        else
+        {
+            HeightToColor2();
+        }        
+        
         Vector2 targetPos = new Vector2(rb.position.x, newY);
 
         rb.MovePosition(targetPos);
@@ -75,5 +87,27 @@ public class Bar : MonoBehaviour
         float t = index / 9f;
 
         return Mathf.Lerp(0f, 3f, t);
+    }
+
+    public void HeightToColor1(float height)
+    {
+        // Map height to a hue (e.g., from blue to red)
+        float heightT = Mathf.InverseLerp(minHeight, maxHeight, height);
+        float hue = Mathf.Lerp(0.6f, -0.1f, heightT); // 0.6 = blue, 0 = red
+        Color newColor = Color.HSVToRGB(hue, 1f, 1f);
+        spriteRenderer.color = newColor;
+    }
+
+    public void HeightToColor2()
+    {
+        // Map index 0–19 → hue 0–360 (wraps around red to red)
+        float hue = (index / 19f); // hue in 0–1 for HSV
+        float saturation = 1f;
+        float value = 1f;
+
+        Color color = Color.HSVToRGB(hue, saturation, value);
+
+        // Apply color to the SpriteRenderer
+        GetComponent<SpriteRenderer>().color = color;
     }
 }

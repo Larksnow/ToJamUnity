@@ -31,6 +31,7 @@ public class PlayerMovement2D : MonoBehaviour
     void FixedUpdate()
     {
         HandleMovement();
+        WrapAroundScreen();
     }
     
     void Update()
@@ -109,4 +110,26 @@ public class PlayerMovement2D : MonoBehaviour
         animator.ResetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce*3);
     }
+
+    void WrapAroundScreen()
+    {
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
+
+        // Horizontal wrap
+        if (viewPos.x > 1f)
+            viewPos.x = 0f;
+        else if (viewPos.x < 0f)
+            viewPos.x = 1f;
+
+        // Safety check: if player falls below -6 world Y, reset position
+        if (transform.position.y < -6f)
+        {
+            transform.position = Vector3.zero;
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        transform.position = Camera.main.ViewportToWorldPoint(viewPos);
+    }
+
 }

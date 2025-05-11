@@ -138,4 +138,17 @@ public class AudioManager : MonoBehaviour
     {
         AudioManager.main.SetState("Damage", state);
     }
+
+    [ContextMenu("SpeedUP")]
+    void SpeedUP()
+    {
+        AudioManager.main.PostEvent("Play_SpeedUpMusic");
+    }
+
+    [ContextMenu("Mute")]
+    void Mute()
+    {
+        AudioManager.main.PostEvent("Stop_MusicTwoSeconds");
+    }
+
 }
