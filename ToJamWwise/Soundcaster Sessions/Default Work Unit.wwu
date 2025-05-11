@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BE798A72-8334-49AD-A681-470A782498B1}" SchemaVersion="123">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{BE798A72-8334-49AD-A681-470A782498B1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main" ID="{502A6768-6541-441B-9E2A-5F24F85B682F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{8484E4B0-10B4-40EF-85B7-F26D3CE57D9F}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SpeedUpMusic" ID="{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_MusicTwoSeconds" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="_140Hz" ID="{8E6069A4-EC52-4080-AE2C-DFA6C6964283}"/>
+							<Value>4.81621027801468E-312</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_8100Hz" ID="{35A55F44-D8C0-40FF-B0C2-3EE2CABCE62D}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_2350Hz" ID="{B4898E1A-7BCA-4235-BD63-D7A7CF3CD4FC}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_80Hz" ID="{8FA0A7D9-B12D-4514-8883-209930481915}"/>
+							<Value>4.81621027801468E-312</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_220Hz" ID="{EA78D8CA-CED5-462D-BC50-F6E3E06BD6F1}"/>
+							<Value>4.81621027801468E-312</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_5000Hz" ID="{C497F658-7F1B-46DE-A63E-C7760FAE56AD}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SpeedUpMusic" ID="{7C94B49E-1054-4724-B8C5-D0BCA3203417}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_420Hz" ID="{6D81C268-0701-4B2E-879E-44318F0412A7}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_1000Hz" ID="{4520960F-3796-4BE7-96AC-7A5E4D0F81C2}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_550Hz" ID="{BC99A65B-0DC5-4DDD-B54C-2EF692D2AE29}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="_770Hz" ID="{9DEC2D12-7458-4FD8-877E-D2893E622A86}"/>
+							<Value>-18</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="One" ID="{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

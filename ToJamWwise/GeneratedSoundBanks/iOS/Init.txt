@@ -1,0 +1,51 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1786804762	Damage			\Default Work Unit\Damage	
+
+State	ID	Name	State Group			Notes
+	678209053	Two	Damage			
+	748895195	None	Damage			
+	912956111	Three	Damage			
+	1064933119	One	Damage			
+	2611770117	Five	Damage			
+	2863728729	Four	Damage			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	135639496	_420Hz			\Default Work Unit\Spectrum Reading\_420Hz	
+	246889828	_770Hz			\Default Work Unit\Spectrum Reading\_770Hz	
+	571805146	_80Hz			\Default Work Unit\Spectrum Reading\_80Hz	
+	943261999	_140Hz			\Default Work Unit\Spectrum Reading\_140Hz	
+	1054198269	_5000Hz			\Default Work Unit\Spectrum Reading\_5000Hz	
+	1125897900	_550Hz			\Default Work Unit\Spectrum Reading\_550Hz	
+	1782326689	_1000Hz			\Default Work Unit\Spectrum Reading\_1000Hz	
+	3272834542	_220Hz			\Default Work Unit\Spectrum Reading\_220Hz	
+	3308542171	_8100Hz			\Default Work Unit\Spectrum Reading\_8100Hz	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3984858204	_2350Hz			\Default Work Unit\Spectrum Reading\_2350Hz	
+
+Effect plug-ins	ID	Name	Type				Notes
+	126992849	_420Hz_EQ	Wwise Parametric EQ			
+	180434916	_220Hz_Meter	Wwise Meter			
+	836937596	_8100Hz_EQ	Wwise Parametric EQ			
+	1004960053	_770Hz_EQ	Wwise Parametric EQ			
+	1290038914	_1000Hz_EQ	Wwise Parametric EQ			
+	1332467722	_770Hz_Meter	Wwise Meter			
+	1454273849	_8100Hz_Meter	Wwise Meter			
+	2057961675	GainMute	Wwise Gain			
+	2287727491	_80Hz_EQ	Wwise Parametric EQ			
+	2394386470	_5000Hz_EQ	Wwise Parametric EQ			
+	2550404882	_550Hz_Meter	Wwise Meter			
+	2596257558	_420Hz_Meter	Wwise Meter			
+	3279064568	_80Hz_Meter	Wwise Meter			
+	3296431405	_2350Hz_EQ	Wwise Parametric EQ			
+	3444659599	_220Hz_EQ	Wwise Parametric EQ			
+	3598359720	_140Hz_EQ	Wwise Parametric EQ			
+	3654608611	_5000Hz_Meter	Wwise Meter			
+	3724651573	_140Hz_Meter	Wwise Meter			
+	4083493149	_550Hz_EQ	Wwise Parametric EQ			
+	4209772223	_1000Hz_Meter	Wwise Meter			
+	4257165986	_2350Hz_Meter	Wwise Meter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
