@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{E8EF4F29-1A3A-A0D5-42EE-DA976C15EF27}",
+    "Hash": "{55186038-F70E-9114-3909-D9FE22362525}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -24,12 +24,28 @@
       "CachePath": "20/{2056C74F-A228-915D-F0ED-B4BC4C2159EC}.wem"
      },
      {
+      "Id": "403820254",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FightFightFight_nl_01.wav",
+      "CachePath": "57/{578F6428-CBCA-A52A-63BB-0F2C543A3575}.wem"
+     },
+     {
       "Id": "445588318",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_loop1_lp.wav",
       "CachePath": "3C/{3CD0FEE0-4534-3D80-76DE-7045130AAA14}.wem"
+     },
+     {
+      "Id": "471652688",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FightFightFight_nl_02.wav",
+      "CachePath": "05/{05E0133B-C064-F753-B36A-6D10B1B8095B}.wem"
      },
      {
       "Id": "481610977",
@@ -78,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_transition3_nl.wav",
       "CachePath": "B3/{B3C1A634-8787-BC32-9374-7B1C321A1B84}.wem"
+     },
+     {
+      "Id": "873480278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FightFightFight_nl_03.wav",
+      "CachePath": "4F/{4FA206EA-F233-35BF-C77B-991409C261A1}.wem"
      }
     ],
     "Events": [
@@ -850,10 +874,20 @@
       "Name": "Stop_MusicTwoSeconds",
       "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Stop_MusicTwoSeconds",
       "GUID": "{B323EA8A-E6C6-42E5-B1CD-140461257E38}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "3",
+      "DurationMax": "3",
+      "MediaRefs": [
+       {
+        "Id": "403820254"
+       },
+       {
+        "Id": "471652688"
+       },
+       {
+        "Id": "873480278"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -918,6 +952,6 @@
     ]
    }
   ],
-  "FileHash": "{75BF9A3B-DDF8-1408-512A-259B72FDBFC1}"
+  "FileHash": "{3686CEB2-C9AB-9F66-AEB0-E912912C2784}"
  }
 }
