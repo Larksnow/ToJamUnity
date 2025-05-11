@@ -3,97 +3,386 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Music" ID="{8484E4B0-10B4-40EF-85B7-F26D3CE57D9F}">
+				<Folder Name="MusicParameterControl" ID="{7253F7DB-E05C-42B7-BBDD-E2E1BF84C37F}" ShortID="967334050">
 					<ChildrenList>
-						<Action Name="" ID="{369D6BDD-0C4A-4D23-8883-C24D3D027039}" ShortID="813688661">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="One" ID="{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}" WorkUnitID="{85AAB8D1-8DC7-4504-9513-28EDD22DD79E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{DB51C3EB-949D-4F41-9379-F718CACCC6B2}" ShortID="64964447">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music0" ID="{4C4DB087-5CC6-43FE-A395-DBE952F6AD13}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{00D40D32-FF21-40B0-9DD5-0CBEF1CB7B05}" ShortID="1054566348">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music1" ID="{80C760C5-A1F7-47B6-8680-F4C7286BC18C}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C6493C1B-A2E5-458E-84F3-58B566EC9F3A}" ShortID="983106960">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music2" ID="{7EE69A8C-4C70-42B0-ADC6-CE5EED6D2F80}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{9821785A-4DE2-47CB-BEA2-ECC017F17C2E}" ShortID="942202409">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music3" ID="{7CBC7BE1-5323-44A9-8AD6-04B0D4BFE990}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{A4A3F861-8489-4575-AFE5-D13992706DEA}" ShortID="652916539">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music4" ID="{A177A179-9629-4916-A791-317918B81FBD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{5A81B554-AFB7-44D1-B9D7-06EDE43A9E0D}" ShortID="1059425293">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music5" ID="{CD711007-3987-45E7-B66A-9E862FD21259}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{BD6E3E57-F15F-4061-8B37-E725DCEC09CE}" ShortID="167754205">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music6" ID="{CBE42708-038B-467E-A1BB-1A35D6A4CA50}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{01EA6B8D-83EA-4AB9-B470-EA96BB6E840B}" ShortID="489313394">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music7" ID="{C8C1605D-8984-4929-AD51-FC2DC8E725BA}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{AFB1FB53-BBC8-44F0-B841-19FA8E73E742}" ShortID="342762614">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music8" ID="{F32EFD37-0141-40F4-92DC-8140E16B4F9C}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{EAF6963F-5809-43C5-8439-75FCFE2C72C8}" ShortID="854837622">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music9" ID="{70849BBA-A49E-4AE9-B235-557713B3CA91}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{64548DA4-1DF7-4C80-A2D6-E9A7213212AC}" ShortID="416238083">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music10" ID="{BBDD4205-6161-475B-A555-7526234375FF}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_SpeedUpMusic" ID="{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}">
+							<ChildrenList>
+								<Action Name="" ID="{E3C8E13F-3079-4E36-BF0F-5923A20A5CD5}" ShortID="483638982">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SpeedUpClock_nl" ID="{B592E67B-0681-4DAA-81DA-177BA3F11D0F}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{67CA822F-8594-4ACC-A5B0-9EDA6DC24456}" ShortID="201174123">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpeedUpMusic" ID="{7C94B49E-1054-4724-B8C5-D0BCA3203417}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D7514631-8A63-4EDC-875C-2F783EF0819A}" ShortID="38078152">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="9"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpeedUpMusic" ID="{7C94B49E-1054-4724-B8C5-D0BCA3203417}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{34B33C3B-15C9-4D75-9663-5E12CDAABF51}" ShortID="381846795">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="10"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SpeedUpClock_nl" ID="{B592E67B-0681-4DAA-81DA-177BA3F11D0F}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_MusicTwoSeconds" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}">
+							<ChildrenList>
+								<Action Name="" ID="{9E37EE80-643F-40ED-B0E3-698153E14E33}" ShortID="1063803299">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music0" ID="{4C4DB087-5CC6-43FE-A395-DBE952F6AD13}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{48CD9B18-47CF-4151-B6C0-6B2A09273D7A}" ShortID="273271076">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music1" ID="{35633145-CA10-480D-AA0B-2F6C6B39E872}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E2BB6615-3CF5-45C3-80D3-EEF946BD93B1}" ShortID="954350747">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music2" ID="{7702B6D9-8299-46F5-85E9-7EB35928DDFD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A8EB45CD-3E1E-4810-A006-29B89B4334B3}" ShortID="226661621">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music3" ID="{718139EB-EBAE-4073-85B4-BDCABFE07173}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C20926C7-4C13-467B-B9AB-6103DF25C2F2}" ShortID="113254339">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music4" ID="{92A4C089-ABD5-47CC-9796-1C22FAC50AF3}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C79BA840-23FE-45F7-A3B2-C774A09F9B40}" ShortID="382845">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music5" ID="{EF4A8494-3F55-4B5E-8063-AEA98B3E4E60}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4DFA97A6-EE26-49A3-9940-B2EEBDBE1B85}" ShortID="51702647">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music6" ID="{1A3965E1-6D71-4523-991D-48CAA4CC84CC}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9848B0DD-FAEF-4C75-8065-605B677A6A51}" ShortID="20489291">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music7" ID="{A50F8A7C-2D2B-408F-9D4E-712EA26648CD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8B21FAB4-5ED7-4529-8281-9D23147F289A}" ShortID="933881254">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music8" ID="{5474D7CC-3707-4135-AD62-84A45C33C40D}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{92623062-3C8D-4C6A-BB2A-8EF934D869B7}" ShortID="1046948849">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music9" ID="{70ED13C9-EF0A-4A5C-A4F1-530E4C9DA0DB}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{856F0DE3-C39A-4BA2-B39E-5C6D56289DB0}" ShortID="1032234823">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music10" ID="{76CF30A2-1C4E-4087-AE69-D9EFAA4C04C1}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{164098EC-D187-4E02-9FDF-C474785D5B2B}" ShortID="959002634">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music0" ID="{4C4DB087-5CC6-43FE-A395-DBE952F6AD13}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8C94C5B7-70BD-4AFA-82E9-7186664036A2}" ShortID="321405742">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music5" ID="{EF4A8494-3F55-4B5E-8063-AEA98B3E4E60}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DCBC3C94-8D4B-4917-9899-F94B96B74AE6}" ShortID="731942151">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music9" ID="{70ED13C9-EF0A-4A5C-A4F1-530E4C9DA0DB}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{ED766ECD-7EA9-4C23-97BD-28FACDAB8447}" ShortID="811006927">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music2" ID="{7702B6D9-8299-46F5-85E9-7EB35928DDFD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7A7C05FC-CA54-4D88-BF56-98235B7744BF}" ShortID="264013223">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music7" ID="{A50F8A7C-2D2B-408F-9D4E-712EA26648CD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B114E846-3DA3-4DB3-B489-A781B7A4166C}" ShortID="653026424">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music6" ID="{1A3965E1-6D71-4523-991D-48CAA4CC84CC}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EF416D8C-88F8-41EA-ABE8-D5603E2E17DF}" ShortID="379907792">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music4" ID="{92A4C089-ABD5-47CC-9796-1C22FAC50AF3}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{490836DA-834E-4627-A26A-FA652BE98C1F}" ShortID="671770829">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music8" ID="{5474D7CC-3707-4135-AD62-84A45C33C40D}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{68C449D6-6151-46A4-9865-A89715C324C4}" ShortID="253215028">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music1" ID="{35633145-CA10-480D-AA0B-2F6C6B39E872}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B72FD6FC-5586-4246-904B-930C74277394}" ShortID="491635222">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music10" ID="{76CF30A2-1C4E-4087-AE69-D9EFAA4C04C1}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3D5BA148-5BB5-435E-B804-11A97B4C849D}" ShortID="648333325">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music3" ID="{718139EB-EBAE-4073-85B4-BDCABFE07173}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Music" ID="{F2F25C17-1C1C-4ECE-B008-BA266FBFB9E5}" ShortID="798159196">
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{8484E4B0-10B4-40EF-85B7-F26D3CE57D9F}">
+							<ChildrenList>
+								<Action Name="" ID="{369D6BDD-0C4A-4D23-8883-C24D3D027039}" ShortID="813688661">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="One" ID="{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}" WorkUnitID="{85AAB8D1-8DC7-4504-9513-28EDD22DD79E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DB51C3EB-949D-4F41-9379-F718CACCC6B2}" ShortID="64964447">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music0" ID="{4C4DB087-5CC6-43FE-A395-DBE952F6AD13}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3264820A-152B-427C-BDDD-220426323C93}" ShortID="359834876">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music1" ID="{35633145-CA10-480D-AA0B-2F6C6B39E872}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7F46C259-1F31-4373-9C65-BB7E591B481C}" ShortID="45790007">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music2" ID="{7702B6D9-8299-46F5-85E9-7EB35928DDFD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9019E22-7A40-412A-A6E8-8BF938B4FC46}" ShortID="813980267">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music3" ID="{718139EB-EBAE-4073-85B4-BDCABFE07173}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D48397DB-C2BE-4E99-BFFA-128C33CFB4F5}" ShortID="69270577">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music4" ID="{92A4C089-ABD5-47CC-9796-1C22FAC50AF3}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{58C64CFB-DF13-4A2F-B258-CBFCE6377E51}" ShortID="971942768">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music5" ID="{EF4A8494-3F55-4B5E-8063-AEA98B3E4E60}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F39D0D3F-6D33-43A3-81CA-161AF505242F}" ShortID="147214038">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music6" ID="{1A3965E1-6D71-4523-991D-48CAA4CC84CC}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F1F4417E-42F0-46EE-A00E-3E91D3934819}" ShortID="824451300">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music7" ID="{A50F8A7C-2D2B-408F-9D4E-712EA26648CD}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{438B21EB-5489-4971-9181-FA0A7ED0B57B}" ShortID="783221306">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music8" ID="{5474D7CC-3707-4135-AD62-84A45C33C40D}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3C588B35-56FD-49B2-92F4-FE0BC4626C0C}" ShortID="718799221">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music9" ID="{70ED13C9-EF0A-4A5C-A4F1-530E4C9DA0DB}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BD6D6FC7-604A-45D3-B2C4-E1A02ED42326}" ShortID="851022133">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music10" ID="{76CF30A2-1C4E-4087-AE69-D9EFAA4C04C1}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

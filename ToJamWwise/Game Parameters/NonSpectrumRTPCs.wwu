@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="NonSpectrumRTPCs" ID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="SpeedUpMusic" ID="{7C94B49E-1054-4724-B8C5-D0BCA3203417}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
