@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     // Singleton instance
     public static AudioManager main { get; private set; }
-
+    public string state;
     // Inspector fields for Wwise references (optional)
     [SerializeField] private string _initBankName = "Init";
 
@@ -136,6 +136,6 @@ public class AudioManager : MonoBehaviour
     [ContextMenu("ChangeState")]
     void ChangeState()
     {
-        AudioManager.main.SetState("Damage", "Five");
+        AudioManager.main.SetState("Damage", state);
     }
 }
