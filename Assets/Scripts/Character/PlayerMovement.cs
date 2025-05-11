@@ -6,6 +6,7 @@ public class PlayerMovement2D : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
+    public float maxJumpSpeed = 25.0f;
     public float jumpForce = 5f;
     public float jumpDelay = 0.2f;
 
@@ -42,7 +43,7 @@ public class PlayerMovement2D : MonoBehaviour
     void HandleMovement()
     {
         float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, Mathf.Min(rb.linearVelocity.y, maxJumpSpeed));
         
         animator.SetFloat("moveSpeed", Mathf.Abs(moveInput));
         
