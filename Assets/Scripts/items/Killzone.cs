@@ -74,6 +74,7 @@ public class Killzone : MonoBehaviour
         if (player != null && player.playerID == targetID)
         {
             Debug.Log("Player entered and was killed.");
+            CameraShake.main.TriggerShake();
             player.Die();
         }
     }

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraShake : MonoBehaviour
 {
+    public static CameraShake main { get; private set; }
     public float duration = 0.3f;
     public float magnitude = 0.5f;
 
@@ -14,7 +15,11 @@ public class CameraShake : MonoBehaviour
        originalPos = transform.localPosition; 
     }
 
-
+    void Awake()
+    {
+        if (main) Destroy(gameObject);
+        else main = this;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,7 +35,7 @@ public class CameraShake : MonoBehaviour
     } 
 
 
- IEnumerator Shake()
+    IEnumerator Shake()
     {
         float elapsed = 0.0f;
 
