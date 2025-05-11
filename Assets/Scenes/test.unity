@@ -1101,7 +1101,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4029,6 +4029,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8233823410975761586, guid: 67296c228663eb642952135cccf07136, type: 3}
   m_PrefabInstance: {fileID: 4243915273458515355}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5457615523230827676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121559029999706775, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157065412184927235, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ae8d28c4750f49aa9b9db2f4de23210, type: 3}
 --- !u!1001 &5657812201026591390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4106,3 +4163,4 @@ SceneRoots:
   - {fileID: 2075457810}
   - {fileID: 1004042129}
   - {fileID: 5657812201026591390}
+  - {fileID: 5457615523230827676}
