@@ -52,8 +52,8 @@ public class Bar : MonoBehaviour
         // --- Vertical movement (RTPC + smooth) ---
         float newY = AudioManager.main.GetRTPCValue(rtpcName);
         newY = DbToHeight(newY);
-        newY -= IndexToOffset(index);
-        newY = Mathf.Clamp(newY, minHeight, maxHeight);
+        // newY -= IndexToOffset(index);
+        // newY = Mathf.Clamp(newY, minHeight, maxHeight);
         Vector2 targetPos = new Vector2(rb.position.x, newY);
 
         rb.MovePosition(targetPos);
