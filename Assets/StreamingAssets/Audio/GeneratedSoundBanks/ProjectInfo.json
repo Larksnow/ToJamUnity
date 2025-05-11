@@ -8,11 +8,11 @@
   "CacheRoot": "../../../../ToJamWwise/.cache",
   "Platforms": [
    {
-    "Name": "iOS",
-    "GUID": "{4EA3F6C8-477E-4B16-9D79-DC64FC993630}",
-    "BasePlatform": "iOS",
-    "BasePlatformGUID": "{ECE03DB4-F948-462D-B2BB-A9173012B1F8}",
-    "Path": "../../../../ToJamWwise/GeneratedSoundBanks/iOS"
+    "Name": "Mac",
+    "GUID": "{57C5CA79-6710-445C-9F1E-18923AE5C72C}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../ToJamWwise/GeneratedSoundBanks/Mac"
    },
    {
     "Name": "Windows",
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{C8DB87BA-9631-83F1-8311-F15FEB4B561E}"
+  "FileHash": "{BF24028F-42B5-2E6B-9B46-A75965C7CE87}"
  }
 }
