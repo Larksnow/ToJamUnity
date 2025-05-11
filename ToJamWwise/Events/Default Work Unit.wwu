@@ -473,6 +473,31 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX" ID="{F471620D-3B53-41E0-900C-D2486C5C5E55}" ShortID="577815691">
+					<ChildrenList>
+						<Event Name="Play_ChargeAndShoot" ID="{0A9F78D5-FAA9-4141-AA0F-595E58EC76B6}">
+							<ChildrenList>
+								<Action Name="" ID="{5E5B3806-BC90-49B7-8FA3-4CF873D4C96D}" ShortID="324626359">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Charge" ID="{B3AB0368-7724-4760-937E-2DC9F92A8083}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{07A578FF-12C1-4D5E-9258-058B3F05B697}" ShortID="1024702455">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Shoot" ID="{38889438-A8A4-485C-8CF1-0BD07782C3B4}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
