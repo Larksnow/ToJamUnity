@@ -6,6 +6,11 @@
 				<MusicSwitchContainer Name="Music0" ID="{4C4DB087-5CC6-43FE-A395-DBE952F6AD13}" ShortID="403479076">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="136"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1162,6 +1167,41 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1.32</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3BBF072F-02F2-4C53-B89E-A1CA96E93DA7}" ShortID="827758735">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{6189AA35-997D-4BA0-967B-2582B2CB6CCA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -2344,6 +2384,41 @@
 									</RTPC>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{F9ABBA42-CFC6-4885-97C6-030B98D40295}" ShortID="654897858">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{0E1E2845-F42C-4530-905F-A48E5E03CF78}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
@@ -3506,6 +3581,41 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1.32</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{93C8F098-2EC6-4FE6-AC8F-C3561C1CBFBC}" ShortID="847073629">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{FACF3EEE-7431-426A-A5A8-9629A438FCA8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -4688,6 +4798,41 @@
 									</RTPC>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{B19AD4B5-6452-4C0C-86E4-5194F83C2334}" ShortID="824226582">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{94BEA07F-525A-4B91-90E1-10747195E6A8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
@@ -5850,6 +5995,41 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1.32</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{E44F7383-A3A7-4334-AE5B-C722B83B3218}" ShortID="342459527">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{BD097CB7-8449-4FB8-AF4E-85E2A79C0C43}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -7032,6 +7212,41 @@
 									</RTPC>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{7DFF6D0A-1936-42A5-BAF7-397FBE696932}" ShortID="199061814">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{667487C7-64E2-4C47-841C-3605A4998856}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
@@ -8194,6 +8409,41 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1.32</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{4F0E3CB4-33E1-4B43-9697-290D266CA574}" ShortID="159032436">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A093FFEB-86D7-4F87-8278-9F35B5101678}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -9376,6 +9626,41 @@
 									</RTPC>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{9FC62C52-B150-4335-AE83-ECEDF26CE090}" ShortID="450406014">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E5EA7FCD-5B4D-44B5-8990-B146349ABD1B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
@@ -10538,6 +10823,41 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1.32</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{3BC5492F-ABA8-4946-B34C-5B1F44E22CF7}" ShortID="227590404">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{FDDE3AC6-44F2-475F-A989-5907476B0968}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -11720,6 +12040,41 @@
 									</RTPC>
 								</Local>
 							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{9E455D91-7B9A-418B-BF01-C39535A23305}" ShortID="478495451">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{82A05ADB-D416-49E2-AD87-855B30EEABCD}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
@@ -12882,6 +13237,41 @@
 															<Point>
 																<XPos>100</XPos>
 																<YPos>1.32</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{445E8B4A-24A1-47B3-8459-E7A9CE019F9E}" ShortID="882260338">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{92047E5B-C2EF-41F2-86E7-92020FCBA602}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0.756</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>

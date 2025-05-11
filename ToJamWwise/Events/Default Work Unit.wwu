@@ -8,6 +8,13 @@
 						<Event Name="Play_SpeedUpMusic" ID="{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}">
 							<ChildrenList>
 								<Action Name="" ID="{E3C8E13F-3079-4E36-BF0F-5923A20A5CD5}" ShortID="483638982">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_SpeedUpClock_nl" ID="{B592E67B-0681-4DAA-81DA-177BA3F11D0F}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
@@ -42,6 +49,11 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="Delay" Type="Real64" Value="10"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -286,6 +298,64 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SlowDownMusic" ID="{B78C03CC-ECF8-49DE-BDA4-53F0C249BF9B}">
+							<ChildrenList>
+								<Action Name="" ID="{B8B32B2C-E349-4903-8DF4-70C020A761A5}" ShortID="32769913">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SlowDownClock_nl" ID="{84C80A85-8033-4403-B45B-7DC9B2F9DA36}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9EA8A8E4-801F-43CB-9A86-6DC428E6680F}" ShortID="845053827">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A1BA23C6-1A6A-494C-8289-7CAA45BB45AD}" ShortID="8809893">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="9"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4EE0F469-1FF5-4D45-8315-BAE6A0CF54E3}" ShortID="570760906">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="10"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_SlowDownClock_nl" ID="{84C80A85-8033-4403-B45B-7DC9B2F9DA36}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{F2F25C17-1C1C-4ECE-B008-BA266FBFB9E5}" ShortID="798159196">
@@ -299,6 +369,26 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="One" ID="{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}" WorkUnitID="{85AAB8D1-8DC7-4504-9513-28EDD22DD79E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7503302E-7169-4075-A16A-2CDD7482EFBA}" ShortID="89828869">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{57DEC3B7-7F8A-4703-87D1-2EB328465224}" ShortID="290867470">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpeedUpMusic" ID="{7C94B49E-1054-4724-B8C5-D0BCA3203417}" WorkUnitID="{A7919CCA-8926-4E94-B816-4F19ABC9A3D7}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -376,6 +466,31 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music10" ID="{76CF30A2-1C4E-4087-AE69-D9EFAA4C04C1}" WorkUnitID="{83D78FDA-145E-4A40-BB5D-8751DC09820A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{F471620D-3B53-41E0-900C-D2486C5C5E55}" ShortID="577815691">
+					<ChildrenList>
+						<Event Name="Play_ChargeAndShoot" ID="{0A9F78D5-FAA9-4141-AA0F-595E58EC76B6}">
+							<ChildrenList>
+								<Action Name="" ID="{5E5B3806-BC90-49B7-8FA3-4CF873D4C96D}" ShortID="324626359">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Charge" ID="{B3AB0368-7724-4760-937E-2DC9F92A8083}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{07A578FF-12C1-4D5E-9258-058B3F05B697}" ShortID="1024702455">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Shoot" ID="{38889438-A8A4-485C-8CF1-0BD07782C3B4}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

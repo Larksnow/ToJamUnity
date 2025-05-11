@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1699119864	Stop_MusicTwoSeconds			\Default Work Unit\MusicParameterControl\Stop_MusicTwoSeconds	
+	2557760338	Play_SlowDownMusic			\Default Work Unit\MusicParameterControl\Play_SlowDownMusic	
 	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
 	3465911149	Play_SpeedUpMusic			\Default Work Unit\MusicParameterControl\Play_SpeedUpMusic	
 
@@ -15,6 +16,7 @@ State	ID	Name	State Group			Notes
 	2863728729	Four	Damage			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	2546080279	SlowDownMusic			\NonSpectrumRTPCs\SlowDownMusic	
 	2635112718	SpeedUpMusic			\NonSpectrumRTPCs\SpeedUpMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -22,8 +24,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	445588318	mus_4-4_136bpm_loop1_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\3C\{3CD0FEE0-4534-3D80-76DE-7045130AAA14}.wem		\Interactive Music Hierarchy\Default Work Unit\Music0\Loop1\mus_4-4_136bpm_loop1_lp\mus_4-4_136bpm_loop1_lp		1355392
 	481610977	mus_4-4_136bpm_loop2_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\9D\{9DF7149A-7C42-B6FE-EE10-78C4D8E09C31}.wem		\Interactive Music Hierarchy\Default Work Unit\Music10\Loop2\mus_4-4_136bpm_loop2_lp\mus_4-4_136bpm_loop2_lp		1355392
 	545942747	mus_4-4_136bpm_loop5_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\38\{38BB3AED-DC29-309F-0DB8-33C2111B0316}.wem		\Interactive Music Hierarchy\Default Work Unit\Music7\Loop5\mus_4-4_136bpm_loop5_lp\mus_4-4_136bpm_loop5_lp		2710688
-	549390272	mus_4-4_136bpm_loop4_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\38\{38706669-F8AB-6EFB-7A36-DD6DC3435D0B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music0\Loop4\mus_4-4_136bpm_loop4_lp\mus_4-4_136bpm_loop4_lp		1355392
-	554051854	sfx_SpeedUpClock_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\28\{282C5D6C-388A-BA92-5E66-9A6D88222171}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ItemSFX\sfx_SpeedUpClock_nl		5830072
+	549390272	mus_4-4_136bpm_loop4_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\AA\{AA6C6B29-E070-625E-5489-B4DBC5F05B9B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music0\Loop4\mus_4-4_136bpm_loop4_lp\mus_4-4_136bpm_loop4_lp		1355392
 	704715968	mus_4-4_136bpm_transition1_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\5A\{5AA0B49A-6902-DD28-6AB9-6D6356BF254B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music5\Transition1\mus_4-4_136bpm_transition1_nl		677744
 	789861466	mus_4-4_136bpm_transition2_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\4E\{4E03E9A8-FEB6-B345-BC72-6F4DEC47895F}.wem		\Interactive Music Hierarchy\Default Work Unit\Music8\Transition2\mus_4-4_136bpm_transition2_nl		677744
 	853036527	mus_4-4_136bpm_transition3_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\B3\{B3C1A634-8787-BC32-9374-7B1C321A1B84}.wem		\Interactive Music Hierarchy\Default Work Unit\Music9\Transition3\mus_4-4_136bpm_transition3_nl		677744

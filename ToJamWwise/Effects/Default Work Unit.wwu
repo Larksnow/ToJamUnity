@@ -171,6 +171,7 @@
 				<Effect Name="_5000Hz_Meter" ID="{C3511591-FD27-447B-9F58-FD113FA3285A}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 					<PropertyList>
 						<Property Name="Hold" Type="Real32" Value="0.08"/>
+						<Property Name="Max" Type="Real32" Value="-2"/>
 						<Property Name="Min" Type="Real32" Value="-18"/>
 						<Property Name="ReleaseTime" Type="Real32" Value="0.4"/>
 					</PropertyList>
@@ -190,6 +191,7 @@
 				<Effect Name="_8100Hz_Meter" ID="{5C4043CF-C5C2-4730-B9E2-0D95B058A8B0}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 					<PropertyList>
 						<Property Name="Hold" Type="Real32" Value="0.08"/>
+						<Property Name="Max" Type="Real32" Value="-3"/>
 						<Property Name="Min" Type="Real32" Value="-18"/>
 						<Property Name="ReleaseTime" Type="Real32" Value="0.4"/>
 					</PropertyList>

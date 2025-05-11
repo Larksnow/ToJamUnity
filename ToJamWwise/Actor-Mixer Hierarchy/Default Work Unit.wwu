@@ -35,8 +35,272 @@
 								<ActiveSource Name="sfx_ClockCountdown30Seconds_nl" ID="{C5CF581B-BEC9-4B37-AA4D-C08DCB66496B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="sfx_SlowDownClock_nl" ID="{84C80A85-8033-4403-B45B-7DC9B2F9DA36}" ShortID="399968823">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ClockSlowDown_nl" ID="{739C60B9-8C1C-4D5E-B394-CC36A08AF8F0}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ClockSlowDown_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="35931039"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ClockSlowDown_nl" ID="{739C60B9-8C1C-4D5E-B394-CC36A08AF8F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="ChargeAndShoot" ID="{E1DFF348-6951-42E5-A505-DD20E6DE5B02}" ShortID="317166665">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_Shoot" ID="{38889438-A8A4-485C-8CF1-0BD07782C3B4}" ShortID="912332475">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0C31486B-7EF6-4755-9121-CCB3FCB97A5A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Shoot" ID="{6B89D493-740F-42B9-84B8-CA0DE36B1137}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Shoot.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1065079791"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Shoot" ID="{6B89D493-740F-42B9-84B8-CA0DE36B1137}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<RandomSequenceContainer Name="sfx_Charge" ID="{B3AB0368-7724-4760-937E-2DC9F92A8083}" ShortID="718378834">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_Charge_nl_01" ID="{CB526A9D-9455-4916-9D57-0AA98F1F3AC4}" ShortID="37145582">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_01" ID="{B48F1470-9A92-47AF-A638-F42C62EFC190}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="495348290"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_01" ID="{B48F1470-9A92-47AF-A638-F42C62EFC190}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_02" ID="{E7702973-C2E7-4F5A-B056-5B3D8D5429D6}" ShortID="532155900">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_02" ID="{6321CF94-65EB-4413-9C4F-6E6BF8D318FD}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="863440831"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_02" ID="{6321CF94-65EB-4413-9C4F-6E6BF8D318FD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_03" ID="{0B32F147-0736-49B1-9889-0B2F980CF8F2}" ShortID="758805054">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_03" ID="{7F747937-BF4C-470F-9E54-BC0600C01FE9}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="474992914"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_03" ID="{7F747937-BF4C-470F-9E54-BC0600C01FE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_04" ID="{C47153F2-E7B3-4A42-9207-B8FBE662962B}" ShortID="423746655">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_04" ID="{1DACB259-7FD3-4D58-870B-3A8AD81747B0}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="983215138"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_04" ID="{1DACB259-7FD3-4D58-870B-3A8AD81747B0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_05" ID="{A2FC543B-0824-4168-89DF-77C543102737}" ShortID="76526307">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_05" ID="{6A649428-0D08-42DA-B27B-DA8DF87AA09C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="870431875"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_05" ID="{6A649428-0D08-42DA-B27B-DA8DF87AA09C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_06" ID="{F8BFBB43-397F-4F16-916B-AA25C87A9395}" ShortID="781792556">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_06" ID="{3222C906-DBB5-4FD1-9FE3-2BB1E1BCA967}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="177448332"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_06" ID="{3222C906-DBB5-4FD1-9FE3-2BB1E1BCA967}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_07" ID="{4B905921-0415-429A-B6EC-7911CD29C67A}" ShortID="873287613">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_07" ID="{EC47E353-CE79-4FCC-A763-0284A4E6C46C}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="203454143"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_07" ID="{EC47E353-CE79-4FCC-A763-0284A4E6C46C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Charge_nl_08" ID="{8A66A887-4030-45A6-888D-BE8519E9EB1B}" ShortID="183078719">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Charge_nl_08" ID="{A34B05C8-0592-4EE1-B523-E8A5E2BCCABC}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Charge_nl_08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="945869016"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Charge_nl_08" ID="{A34B05C8-0592-4EE1-B523-E8A5E2BCCABC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

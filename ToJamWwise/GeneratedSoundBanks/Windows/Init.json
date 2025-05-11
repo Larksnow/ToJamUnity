@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{6FDBC7BE-8AD3-F7DC-BA64-7B2898E25A38}",
+    "Hash": "{7CA4F731-A880-1F82-7B57-0B8BBD1D5252}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -446,6 +446,12 @@
       "GUID": "{4520960F-3796-4BE7-96AC-7A5E4D0F81C2}"
      },
      {
+      "Id": "2546080279",
+      "Name": "SlowDownMusic",
+      "ObjectPath": "\\Game Parameters\\NonSpectrumRTPCs\\SlowDownMusic",
+      "GUID": "{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}"
+     },
+     {
       "Id": "2635112718",
       "Name": "SpeedUpMusic",
       "ObjectPath": "\\Game Parameters\\NonSpectrumRTPCs\\SpeedUpMusic",
@@ -518,6 +524,6 @@
     ]
    }
   ],
-  "FileHash": "{F420504A-1C9B-6578-BF8B-9D0D3D5580AF}"
+  "FileHash": "{1D1389D8-1C76-FC36-40AE-7CB0747C4117}"
  }
 }
