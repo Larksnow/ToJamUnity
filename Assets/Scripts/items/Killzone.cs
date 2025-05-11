@@ -12,6 +12,7 @@ public class Killzone : MonoBehaviour
     void Start()
     {
         killzoneCollider = GetComponent<BoxCollider2D>();
+        AudioManager.main.PostEvent("Play_ChargeAndShoot");
         if (killzoneCollider == null)
         {
             Debug.LogError("Killzone requires a BoxCollider2D.");

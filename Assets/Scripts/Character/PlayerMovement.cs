@@ -153,6 +153,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         Debug.Log("Player " + playerID + " died");
+        AudioManager.main.PostEvent("Play_Death");
     }
 
 }
