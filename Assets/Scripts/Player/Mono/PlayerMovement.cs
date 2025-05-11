@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerController : MonoBehaviour
+public class SPlayerController : MonoBehaviour
 {
     public float moveForce = 50f;         // How strong the input force is
     public float maxSpeed = 5f;           // Cap horizontal speed
