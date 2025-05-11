@@ -13,10 +13,17 @@ public class BarAuto : MonoBehaviour
     [SerializeField] private float pushHeight = 2.0f;  
     [SerializeField] private float checkDistance = 5.0f;
 
+    [Header("UpwardForce")]
+    [SerializeField] private float maxHeight = 10.0f; // depends on frequency
+    [SerializeField] private float exponent = 2.5f; // for acceleration curve
+    [SerializeField] private float maxForce = 4000.0f;  // this can move to player itself
+    [SerializeField] private float localAccelerationFactor = 20.0f;
 
+    // for auto movement
     private Vector3 originalPosition;
     private bool moveUpward = true;
     private float timer;
+    
     private List<Rigidbody2D> colliders  = new List<Rigidbody2D>();
     private bool waitForTick = false;
 
@@ -80,7 +87,6 @@ public class BarAuto : MonoBehaviour
                 Rigidbody2D otherRb = collider.gameObject.GetComponent<Rigidbody2D>();
                 if (otherRb != null && otherRb != rb)
                 {
-                    Debug.Log("Pushing object: " + collider.gameObject.name);
                     colliders.Add(otherRb);
                 }
             }
@@ -101,7 +107,13 @@ public class BarAuto : MonoBehaviour
                 continue;
             }
             
+            // remove huge force on the contacted instances and apply another upward force on them.
             instance.linearVelocityY = 0.0f;
+            float normalizedHeight = Mathf.Clamp01(pushHeight / maxHeight);
+            float mappedHeight = Mathf.Pow(normalizedHeight, exponent) * maxHeight;
+            float force = Mathf.Clamp(mappedHeight * instance.mass * localAccelerationFactor, 0, maxForce);
+            instance.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
+            Debug.Log("Pushing object: " + instance.gameObject.name + " with force: " +  force);
         }
         
         colliders.Clear();
