@@ -4,6 +4,15 @@
 		<WorkUnit Name="Default Work Unit" ID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="ItemSFX" ID="{BBEFC586-95D7-4E81-A0B1-DF5F86F4EB0A}" ShortID="117142908">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{80EDC1AB-985B-447C-9C5F-949B0A2FACB8}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -59,7 +68,16 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="ChargeAndShoot" ID="{E1DFF348-6951-42E5-A505-DD20E6DE5B02}" ShortID="317166665">
+				<ActorMixer Name="sfx_Shoot" ID="{E1DFF348-6951-42E5-A505-DD20E6DE5B02}" ShortID="317166665">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{83800484-F87C-4278-BB37-626B8DBCB7E4}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -297,6 +315,121 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_Charge_nl_08" ID="{A34B05C8-0592-4EE1-B523-E8A5E2BCCABC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="sfx_Death" ID="{75696D88-9B58-4316-8D69-1217C12277A8}" ShortID="152747933">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{47065657-EBE4-4D55-B600-824E4EB1982D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_Death_nl_01" ID="{714F47C0-BE8B-40C5-874A-F2900B95EADF}" ShortID="428118551">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Death_nl_01" ID="{3F2F8B28-8D85-44C1-B92D-E7117702692B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Death_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="227722996"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Death_nl_01" ID="{3F2F8B28-8D85-44C1-B92D-E7117702692B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Death_nl_02" ID="{4F03B5A5-E71C-4D9C-AF9C-0239D3FD4B42}" ShortID="389445413">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Death_nl_02" ID="{1E15F352-BDF6-416B-966A-FE22B44CEFB2}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Death_nl_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="989146216"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Death_nl_02" ID="{1E15F352-BDF6-416B-966A-FE22B44CEFB2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Death_nl_03" ID="{0CC11A47-687F-41A1-B441-68CCCCC07AE9}" ShortID="1007527570">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Death_nl_03" ID="{8B192F1C-895D-42F5-8DA1-0A89ACFD3ACF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Death_nl_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="177539996"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Death_nl_03" ID="{8B192F1C-895D-42F5-8DA1-0A89ACFD3ACF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Death_nl_04" ID="{8BEA30E9-1BB4-4F4C-A3A9-DC0956FC6455}" ShortID="416672684">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Death_nl_04" ID="{75E6C3AB-5FA1-4FD4-A0A8-7EC59219DCA6}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Death_nl_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="666279045"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Death_nl_04" ID="{75E6C3AB-5FA1-4FD4-A0A8-7EC59219DCA6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

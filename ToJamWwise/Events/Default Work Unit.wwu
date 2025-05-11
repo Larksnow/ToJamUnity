@@ -496,6 +496,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Death" ID="{DABA6F5C-B999-4B38-89B9-F18A2F68C9E2}">
+							<ChildrenList>
+								<Action Name="" ID="{7727EE6F-9ED2-4258-8014-5EFA950388DA}" ShortID="537941277">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Death" ID="{75696D88-9B58-4316-8D69-1217C12277A8}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
