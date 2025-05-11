@@ -290,7 +290,7 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 8
   jumpDelay: 0.2
-  horizontalDampening: 0.5
+  horizontalDampening: 0.1
   _isGrounded: 0
 --- !u!61 &417784495
 BoxCollider2D:
