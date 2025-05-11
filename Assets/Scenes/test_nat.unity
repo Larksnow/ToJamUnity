@@ -658,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1269305952224883384, guid: a2c17eb89d1984b97ab6d1a63011a26c, type: 3}
       propertyPath: pushHeight
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1269305952224883384, guid: a2c17eb89d1984b97ab6d1a63011a26c, type: 3}
       propertyPath: upwardForce

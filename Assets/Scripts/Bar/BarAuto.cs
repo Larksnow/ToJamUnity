@@ -11,13 +11,13 @@ public class BarAuto : MonoBehaviour
     [Header("Setting")]
     [SerializeField] private float flipDuration = 2.0f;
     [SerializeField] private float pushHeight = 2.0f;  
-    [SerializeField] private float checkDistance = 5.0f;
 
     [Header("UpwardForce")]
-    [SerializeField] private float maxHeight = 10.0f; // depends on frequency
-    [SerializeField] private float exponent = 2.5f; // for acceleration curve
-    [SerializeField] private float maxForce = 4000.0f;  // this can move to player itself
-    [SerializeField] private float localAccelerationFactor = 20.0f;
+    private float maxHeight = 10.0f; // depends on frequency
+    private float exponent = 2.5f; // for acceleration curve
+    private float maxForce = 4000.0f;  // this can move to player itself
+    private float localAccelerationFactor = 20.0f;
+    private float checkDistance = 0.5f;
 
     // for auto movement
     private Vector3 originalPosition;
