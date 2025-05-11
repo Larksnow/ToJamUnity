@@ -10,6 +10,8 @@ public class PlayerMovement2D : MonoBehaviour
     public float jumpDelay = 0.2f;
 
     public float horizontalDampening = 0.5f;
+
+    public GameObject landCloudPrefab;
     
     [Header("State")]
     [SerializeField] private bool _isGrounded;
@@ -91,6 +93,8 @@ public class PlayerMovement2D : MonoBehaviour
         {
             IsGrounded = true;
             animator.SetTrigger("Land");
+
+            Instantiate(landCloudPrefab, transform.position, Quaternion.identity);
         }
     }
 
