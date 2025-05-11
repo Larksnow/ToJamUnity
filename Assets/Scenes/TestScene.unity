@@ -263,7 +263,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1.5
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -287,9 +287,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686390dbcfb07414793bc6166ba4dd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
+  moveSpeed: 10
+  jumpForce: 8
   jumpDelay: 0.2
+  horizontalDampening: 0.5
   _isGrounded: 0
 --- !u!61 &417784495
 BoxCollider2D:
@@ -328,7 +329,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.8}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.6}
     oldSize: {x: 6.17, y: 7.35}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5

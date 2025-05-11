@@ -54,11 +54,11 @@ public class PlayerMovement2D : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded)
         {
             IsGrounded = false; // prevent double jumps
-            animator.SetBool("IsJumping", true);
+            animator.SetTrigger("Jump");
             StartCoroutine(ApplyJumpForceAfterDelay(jumpDelay));
         }
     }
-    
+
     void UpdateAnimationState()
     {
         // Jumping/Falling animation states
@@ -66,18 +66,15 @@ public class PlayerMovement2D : MonoBehaviour
         {
             if (rb.linearVelocity.y > 0.1f)
             {
-                animator.SetBool("IsJumping", true);
                 animator.SetBool("IsFalling", false);
             }
             else if (rb.linearVelocity.y < -0.1f)
             {
-                animator.SetBool("IsJumping", false);
                 animator.SetBool("IsFalling", true);
             }
         }
         else
         {
-            animator.SetBool("IsJumping", false);
             animator.SetBool("IsFalling", false);
         }
     }
@@ -93,6 +90,7 @@ public class PlayerMovement2D : MonoBehaviour
         if (collision.contacts[0].normal.y > 0.5f)
         {
             IsGrounded = true;
+            animator.SetTrigger("Land");
         }
     }
 
@@ -104,6 +102,7 @@ public class PlayerMovement2D : MonoBehaviour
     private IEnumerator ApplyJumpForceAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
+        animator.ResetTrigger("Jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce*3);
     }
 }
