@@ -499,9 +499,22 @@
 						<Event Name="Play_Death" ID="{DABA6F5C-B999-4B38-89B9-F18A2F68C9E2}">
 							<ChildrenList>
 								<Action Name="" ID="{7727EE6F-9ED2-4258-8014-5EFA950388DA}" ShortID="537941277">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_Death" ID="{75696D88-9B58-4316-8D69-1217C12277A8}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CC1A5AF0-B95F-436A-AF39-B3D566241409}" ShortID="898343133">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CheerAndBoo" ID="{020B3B8A-8DF0-480F-9CC4-012612BA7EA4}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
