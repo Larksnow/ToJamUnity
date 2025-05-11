@@ -171,6 +171,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         Debug.Log("Player " + playerID + " died");
+        Scoreboard.Instance.AddScore(playerID);
         AudioManager.main.PostEvent("Play_Death");
     }
 
