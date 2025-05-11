@@ -308,6 +308,9 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{27B085E1-1E41-4467-9B3D-2F4B012526BE}" ShortID="783168915">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_FightFightFight" ID="{30C26F8F-5590-473E-9758-5C8C4D232536}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>

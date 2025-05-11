@@ -188,8 +188,18 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-6</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BD5F4B1F-2E98-4E44-83C7-5D481B8D9724}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -221,6 +231,21 @@
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{D78DC36B-1D8D-4483-945B-A773DA6184AD}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{48F3D147-9E5F-4720-98A6-FB81DB2DFE2B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
@@ -427,6 +452,21 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D5828BE5-C05D-4C8C-8547-4F803ACAAFAE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -551,8 +591,18 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-4</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FFEE7B04-B2D7-4DB0-B9DD-518C81E10675}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
