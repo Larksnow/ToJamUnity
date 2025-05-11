@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{12309208-4F92-4519-B542-425117E3415F}",
     "Language": "SFX",
-    "Hash": "{4543110D-BEF4-8949-8EC2-6028508A1CE5}",
+    "Hash": "{D6D8C170-9877-64FB-060E-B2247344E219}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -24,12 +24,28 @@
       "CachePath": "60/{605367E6-4150-3681-A553-FCA87B2D7DBF}.wem"
      },
      {
+      "Id": "177539996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Death_nl_03.wav",
+      "CachePath": "5C/{5C10BD58-8A70-99EB-7199-0EC83B19FE3A}.wem"
+     },
+     {
       "Id": "203454143",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_Charge_nl_07.wav",
       "CachePath": "5F/{5F428590-B03E-6C33-7E6A-E2042E76F834}.wem"
+     },
+     {
+      "Id": "227722996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Death_nl_01.wav",
+      "CachePath": "75/{759CB0E7-613E-6DF8-DEF3-A11923178FD0}.wem"
      },
      {
       "Id": "474992914",
@@ -46,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "sfx_Charge_nl_01.wav",
       "CachePath": "26/{26727CB4-6942-12B7-634F-D15DC0E7B925}.wem"
+     },
+     {
+      "Id": "666279045",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Death_nl_04.wav",
+      "CachePath": "63/{63BE597F-6618-DC6A-B044-CF953849CACF}.wem"
      },
      {
       "Id": "863440831",
@@ -78,6 +102,14 @@
       "Location": "Memory",
       "ShortName": "sfx_Charge_nl_04.wav",
       "CachePath": "8B/{8B1EDB6C-86C8-BBD4-C357-20A95437EACA}.wem"
+     },
+     {
+      "Id": "989146216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Death_nl_02.wav",
+      "CachePath": "8C/{8CEB241A-00F7-A3F3-5E94-D590EF2A481B}.wem"
      },
      {
       "Id": "1065079791",
@@ -126,10 +158,33 @@
         "Id": "1065079791"
        }
       ]
+     },
+     {
+      "Id": "1172822028",
+      "Name": "Play_Death",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Death",
+      "GUID": "{DABA6F5C-B999-4B38-89B9-F18A2F68C9E2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74915355",
+      "DurationMax": "1.3348398",
+      "MediaRefs": [
+       {
+        "Id": "177539996"
+       },
+       {
+        "Id": "227722996"
+       },
+       {
+        "Id": "666279045"
+       },
+       {
+        "Id": "989146216"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{0DE292FF-24CA-B3BE-0BE5-5315BB1B7076}"
+  "FileHash": "{5ADEFBA2-3619-5794-DF2D-09F91DD8CD03}"
  }
 }

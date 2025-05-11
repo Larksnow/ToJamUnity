@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CHARGEANDSHOOT = 2775409438U;
+        static const AkUniqueID PLAY_DEATH = 1172822028U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_SLOWDOWNMUSIC = 2557760338U;
         static const AkUniqueID PLAY_SPEEDUPMUSIC = 3465911149U;
