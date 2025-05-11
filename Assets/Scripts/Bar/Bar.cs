@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class Bar : MonoBehaviour
 {
-    private BoxCollider2D boxCollider;
+    private Rigidbody2D rb;
     public string rtpcName;
     public int index;
 
@@ -23,22 +23,28 @@ public class Bar : MonoBehaviour
     
     [Header("UpwardForce")]
     private float exponent = 2.5f; // for acceleration curve
-    private float maxForce = 500.0f;  // this can move to player itself
-    private float localAccelerationFactor = 5.0f;
-    private float checkDistance = 0.1f;
+    private float maxForce = 1000.0f;  // this can move to player itself
+    private float localAccelerationFactor = 50.0f;
+    private float checkDistance = 1.0f;
 
     private float timer;
     private float heightDelta = -1.0f;
 
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Kinematic;
         timer = stepInterval;
     }
 
     void FixedUpdate()
     {
-        Vector2 currentPos = transform.position;
+        Vector2 currentPos = rb.position;
+
+        if (heightDelta > 0)
+        {
+            LaunchContactedInstances(heightDelta, true);
+        }
 
         // --- Horizontal step: teleport X ---
         timer -= Time.fixedDeltaTime;
@@ -61,10 +67,15 @@ public class Bar : MonoBehaviour
         newY = DbToHeight(newY);
         // newY -= IndexToOffset(index);
         // newY = Mathf.Clamp(newY, minHeight, maxHeight);
-        Vector2 targetPos = new Vector2(transform.position.x, newY);
+        Vector2 targetPos = new Vector2(rb.position.x, newY);
 
-        transform.position = targetPos;
+        rb.MovePosition(targetPos);
         heightDelta = newY - currentPos.y;
+        
+        if (heightDelta > 0)
+        {
+            LaunchContactedInstances(heightDelta, false);
+        }
     }
 
     public float DbToHeight(float input)
@@ -85,72 +96,32 @@ public class Bar : MonoBehaviour
         return Mathf.Lerp(0f, 3f, t);
     }
     
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Debug.Log("Collision with: " + collision.gameObject.name + " pushDelta: " + heightDelta);
-        if (heightDelta > 0.0f)
-        {
-            Rigidbody2D otherRb = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (otherRb != null)
-            {
-                otherRb.linearVelocityY = 0.0f;
-                float mappedHeight = Mathf.Pow(heightDelta, exponent) * Mathf.Abs(maxHeight);
-                float force = Mathf.Clamp(mappedHeight * otherRb.mass * localAccelerationFactor, 0, maxForce);
-                otherRb.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
-                Debug.Log("force: " + force);
-            }
-        }
-    }
-    
-    void CollectContactedInstance(float heightDelta)
+    void LaunchContactedInstances(float heightDelta, bool applyForce)
     {
         Vector3 center = transform.position;
-        Vector3 size = boxCollider.size;
+        Vector3 size = transform.localScale;
         Vector3 upperEdgePosition = new Vector3(center.x, center.y + size.y / 2, center.z);
-        Vector3 extents = new Vector3(size.x / 2, 0.1f, 0.0f);
-        RaycastHit2D[] hitColliders = Physics2D.BoxCastAll(upperEdgePosition, extents, 0.0f, Vector2.up);
-        Debug.DrawLine(center, center + new Vector3(0, size.y / 2), Color.red, 2.0f);
+        Vector3 extents = new Vector3(size.x / 2, checkDistance);
+        RaycastHit2D[] hitColliders = Physics2D.BoxCastAll(upperEdgePosition, extents, 0.0f, Vector2.up, 0.1f);
+        Debug.DrawLine(center, center + new Vector3(0, size.y / 2 + checkDistance), Color.red, 2.0f);
+        
+        float mappedHeight = Mathf.Pow(heightDelta, exponent) * Mathf.Abs(maxHeight);
         
         foreach (var raycast in hitColliders)
         {
             Collider2D collider = raycast.collider;
-            if (collider != null)
+            if (collider != null && collider.gameObject.CompareTag("Bouncer"))
             {
                 Rigidbody2D otherRb = collider.gameObject.GetComponent<Rigidbody2D>();
                 if (otherRb != null)
                 {
-                    //colliders.Add(otherRb);
+                    otherRb.linearVelocityY = 0.0f;
+                    
+                    float force = Mathf.Clamp(mappedHeight * otherRb.mass * localAccelerationFactor, 0, maxForce);
+                    otherRb.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
+                    Debug.Log(gameObject.name + " pushing object: " + otherRb.gameObject.name + " with force: " + force);
                 }
             }
         }
-
-        /*
-        if (colliders.Count > 0)
-        {
-            pushDelta = heightDelta;
-        }
-        */
-    }
-
-    void RemoveContactedInstance(float heightDelta)
-    {
-        /*
-        foreach (var instance in colliders)
-        {
-            if (instance == null)
-            {
-                continue;
-            }
-            
-            // remove huge force on the contacted instances and apply another upward force on them.
-            instance.linearVelocityY = 0.0f;
-            float mappedHeight = Mathf.Pow(heightDelta, exponent) * Mathf.Abs(maxHeight);
-            float force = Mathf.Clamp(mappedHeight * instance.mass * localAccelerationFactor, 0, maxForce);
-            instance.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
-            Debug.Log("Pushing object: " + instance.gameObject.name + " with force: " + force);
-        }
-        
-        colliders.Clear();
-        */
     }
 }

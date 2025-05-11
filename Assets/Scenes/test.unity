@@ -2670,7 +2670,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3632448344614588287, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3632448344614588287, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
       propertyPath: m_GravityScale
@@ -2679,6 +2679,10 @@ PrefabInstance:
     - target: {fileID: 5022257802733789757, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022257802733789757, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
       objectReference: {fileID: 0}
     - target: {fileID: 8542405269278402050, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
       propertyPath: m_LocalPosition.x
