@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{12309208-4F92-4519-B542-425117E3415F}",
     "Language": "SFX",
-    "Hash": "{D6D8C170-9877-64FB-060E-B2247344E219}",
+    "Hash": "{6024E4CC-EF68-31C6-7421-83D723A6EB5F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
     "Media": [
+     {
+      "Id": "30333470",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Boo_nl_01.wav",
+      "CachePath": "C6/{C6AF755E-497C-319B-21D6-60B965B1742F}.wem"
+     },
      {
       "Id": "177448332",
       "Language": "SFX",
@@ -64,12 +72,28 @@
       "CachePath": "26/{26727CB4-6942-12B7-634F-D15DC0E7B925}.wem"
      },
      {
+      "Id": "611319382",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Cheer_nl_01.wav",
+      "CachePath": "0E/{0ED11842-2F89-FD97-8042-6095947D26D4}.wem"
+     },
+     {
       "Id": "666279045",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_Death_nl_04.wav",
       "CachePath": "63/{63BE597F-6618-DC6A-B044-CF953849CACF}.wem"
+     },
+     {
+      "Id": "799849623",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Cheer_nl_03.wav",
+      "CachePath": "1A/{1A60BF9A-CD9C-9858-490D-CAA503703398}.wem"
      },
      {
       "Id": "863440831",
@@ -96,6 +120,14 @@
       "CachePath": "09/{096D2CF9-8484-48C2-F97D-6E55B58AE577}.wem"
      },
      {
+      "Id": "958561296",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Boo_nl_02.wav",
+      "CachePath": "3C/{3C939651-F93B-175C-2DC5-4B7C0B99CAC9}.wem"
+     },
+     {
       "Id": "983215138",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "sfx_Death_nl_02.wav",
       "CachePath": "8C/{8CEB241A-00F7-A3F3-5E94-D590EF2A481B}.wem"
+     },
+     {
+      "Id": "1025959460",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_Cheer_nl_02.wav",
+      "CachePath": "9C/{9C1F03E0-37C4-6497-632C-0499BFB699B3}.wem"
      },
      {
       "Id": "1065079791",
@@ -165,9 +205,12 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Death",
       "GUID": "{DABA6F5C-B999-4B38-89B9-F18A2F68C9E2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.74915355",
-      "DurationMax": "1.3348398",
+      "DurationMin": "3.8635857",
+      "DurationMax": "6.4460354",
       "MediaRefs": [
+       {
+        "Id": "30333470"
+       },
        {
         "Id": "177539996"
        },
@@ -175,16 +218,28 @@
         "Id": "227722996"
        },
        {
+        "Id": "611319382"
+       },
+       {
         "Id": "666279045"
        },
        {
+        "Id": "799849623"
+       },
+       {
+        "Id": "958561296"
+       },
+       {
         "Id": "989146216"
+       },
+       {
+        "Id": "1025959460"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{6704CCF1-F02A-ADDC-CD8C-9E8DFD91F854}"
+  "FileHash": "{05C1AEB2-45F1-5C5D-CFE2-3495CF5AC8CA}"
  }
 }

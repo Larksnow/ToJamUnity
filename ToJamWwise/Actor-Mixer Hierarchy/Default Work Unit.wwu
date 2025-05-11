@@ -132,6 +132,15 @@
 					</ChildrenList>
 				</ActorMixer>
 				<RandomSequenceContainer Name="sfx_Charge" ID="{B3AB0368-7724-4760-937E-2DC9F92A8083}" ShortID="718378834">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D78DC36B-1D8D-4483-945B-A773DA6184AD}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -411,6 +420,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_Death_nl_04" ID="{8BEA30E9-1BB4-4F4C-A3A9-DC0956FC6455}" ShortID="416672684">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -430,6 +446,148 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_Death_nl_04" ID="{75E6C3AB-5FA1-4FD4-A0A8-7EC59219DCA6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="sfx_CheerAndBoo" ID="{020B3B8A-8DF0-480F-9CC4-012612BA7EA4}" ShortID="698359687">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5428B3E7-874C-4869-9A24-E8B20CA0E2D4}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_Boo_nl_01" ID="{E00040E2-1B7D-45D4-BA18-6D33FB282994}" ShortID="274198833">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Boo_nl_01" ID="{5BC8EF6D-8BFD-4A31-8AF5-A5E88A31070E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Boo_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="30333470"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Boo_nl_01" ID="{5BC8EF6D-8BFD-4A31-8AF5-A5E88A31070E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Boo_nl_02" ID="{8AE7F362-F329-41FA-8E2D-AD5FDFDC0E07}" ShortID="213398126">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Boo_nl_02" ID="{5437523A-5AE8-45CD-94A5-BE03E033ED2A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Boo_nl_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="958561296"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Boo_nl_02" ID="{5437523A-5AE8-45CD-94A5-BE03E033ED2A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Cheer_nl_01" ID="{446A6229-1B20-4358-84E8-12086F245816}" ShortID="101936877">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Cheer_nl_01" ID="{E1E4C99C-F9E6-45DB-8907-470CA12DDF75}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Cheer_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="611319382"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Cheer_nl_01" ID="{E1E4C99C-F9E6-45DB-8907-470CA12DDF75}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Cheer_nl_02" ID="{6403ACDA-60CC-493F-B119-D24086C46C0E}" ShortID="235775706">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Cheer_nl_02" ID="{93839612-A457-4E55-9322-BA997FE0B672}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Cheer_nl_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1025959460"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Cheer_nl_02" ID="{93839612-A457-4E55-9322-BA997FE0B672}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Cheer_nl_03" ID="{712A0DDF-746D-4AED-998D-ED93B70BBFFF}" ShortID="485946454">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Cheer_nl_03" ID="{67A03568-4935-42BA-BA66-E49E209A108B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Cheer_nl_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="799849623"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Cheer_nl_03" ID="{67A03568-4935-42BA-BA66-E49E209A108B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

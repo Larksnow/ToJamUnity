@@ -3,17 +3,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	2775409438	Play_ChargeAndShoot			\Default Work Unit\SFX\Play_ChargeAndShoot	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	30333470	sfx_Boo_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\C6\{C6AF755E-497C-319B-21D6-60B965B1742F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CheerAndBoo\sfx_Boo_nl_01		768096
 	177448332	sfx_Charge_nl_06	E:\_Github\ToJamUnity\ToJamWwise\.cache\60\{605367E6-4150-3681-A553-FCA87B2D7DBF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_06		720096
 	177539996	sfx_Death_nl_03	E:\_Github\ToJamUnity\ToJamWwise\.cache\5C\{5C10BD58-8A70-99EB-7199-0EC83B19FE3A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Death\sfx_Death_nl_03		192096
 	203454143	sfx_Charge_nl_07	E:\_Github\ToJamUnity\ToJamWwise\.cache\5F\{5F428590-B03E-6C33-7E6A-E2042E76F834}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_07		720096
 	227722996	sfx_Death_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\75\{759CB0E7-613E-6DF8-DEF3-A11923178FD0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Death\sfx_Death_nl_01		192096
 	474992914	sfx_Charge_nl_03	E:\_Github\ToJamUnity\ToJamWwise\.cache\23\{23DB98A6-AB8A-8C62-AD06-D78964A5FBB8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_03		720096
 	495348290	sfx_Charge_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\26\{26727CB4-6942-12B7-634F-D15DC0E7B925}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_01		768096
+	611319382	sfx_Cheer_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\0E\{0ED11842-2F89-FD97-8042-6095947D26D4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CheerAndBoo\sfx_Cheer_nl_01		768096
 	666279045	sfx_Death_nl_04	E:\_Github\ToJamUnity\ToJamWwise\.cache\63\{63BE597F-6618-DC6A-B044-CF953849CACF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Death\sfx_Death_nl_04		192096
+	799849623	sfx_Cheer_nl_03	E:\_Github\ToJamUnity\ToJamWwise\.cache\1A\{1A60BF9A-CD9C-9858-490D-CAA503703398}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CheerAndBoo\sfx_Cheer_nl_03		768096
 	863440831	sfx_Charge_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\74\{74A40FCD-30EE-028D-89A0-EE8FDF69503F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_02		720096
 	870431875	sfx_Charge_nl_05	E:\_Github\ToJamUnity\ToJamWwise\.cache\DF\{DFD253A4-7DD8-503A-5F93-D9088A2FC634}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_05		720096
 	945869016	sfx_Charge_nl_08	E:\_Github\ToJamUnity\ToJamWwise\.cache\09\{096D2CF9-8484-48C2-F97D-6E55B58AE577}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_08		720096
+	958561296	sfx_Boo_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\3C\{3C939651-F93B-175C-2DC5-4B7C0B99CAC9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CheerAndBoo\sfx_Boo_nl_02		782796
 	983215138	sfx_Charge_nl_04	E:\_Github\ToJamUnity\ToJamWwise\.cache\8B\{8B1EDB6C-86C8-BBD4-C357-20A95437EACA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Charge\sfx_Charge_nl_04		720096
 	989146216	sfx_Death_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\8C\{8CEB241A-00F7-A3F3-5E94-D590EF2A481B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Death\sfx_Death_nl_02		192096
+	1025959460	sfx_Cheer_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\9C\{9C1F03E0-37C4-6497-632C-0499BFB699B3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CheerAndBoo\sfx_Cheer_nl_02		960096
 	1065079791	sfx_Shoot	E:\_Github\ToJamUnity\ToJamWwise\.cache\6E\{6E3E10B4-C488-EFC5-6AE6-D0C3B1195639}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_Shoot\sfx_Shoot		1536096
 
