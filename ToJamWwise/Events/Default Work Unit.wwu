@@ -520,6 +520,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_PickUpItem" ID="{123C692F-BF21-4A63-B75D-446603C5A749}">
+							<ChildrenList>
+								<Action Name="" ID="{5B278DF8-62B6-4969-93AB-4B80A9D9B6F9}" ShortID="163980874">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PickUp_nl" ID="{D07FFB68-C5B2-4DD6-AA3F-A6FB113C8B93}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UseItem" ID="{94EC6AA9-42AE-4150-8145-EB3CEB6AEA86}">
+							<ChildrenList>
+								<Action Name="" ID="{D533C194-109B-4B12-9388-D1DFA5B7DC8E}" ShortID="949723419">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_Use_nl" ID="{58D14C52-4A4D-43E2-99DD-05040FB6FCBF}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
