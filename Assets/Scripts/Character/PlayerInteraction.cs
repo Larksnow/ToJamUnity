@@ -1,51 +1,45 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public int mute = 0;
-    public int speedup = 0;
-    public int slowdown = 0;
-    public int attack = 0;
+    public List<ItemSO> items = new List<ItemSO>();
+    public int maxHold = 3; // Max number of items player can carry
+    public Player player;
 
-        // 处理物品捡起的逻辑
-    public void ItemPickUp(PickupItem item)
-    {
-        if (item.itemName == "mute")
-        {
-            // 增加数量
-            mute++;
-            Debug.Log("You picked up a mute item, Total mute: " + mute);
-        }
-
-        if (item.itemName == "speedup")
-        {
-            speedup++;
-            Debug.Log("You picked up a health potion! Total speedup: " + speedup);
-        }
-
-                if (item.itemName == "slowdown")
-        {
-            slowdown++;
-            Debug.Log("You picked up a health potion! Total slowdown: " + slowdown);
-        }
-
-                if (item.itemName == "attack")
-        {
-            attack++;
-            Debug.Log("You picked up a health potion! Total attack: " + attack);
-        }
-       
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        player = GetComponent<Player>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // Example: use first item
+        // if (Input.GetKeyDown(KeyCode.E)) UseItem(0);
+    }
+
+    public void UseItem(int index)
+    {
+        if (index >= 0 && index < items.Count && items[index] != null)
+        {
+            items[index].UseItem(player);
+            items.RemoveAt(index);
+        }
+        else
+        {
+            Debug.LogWarning("Tried to use an invalid or null item at index: " + index);
+        }
+    }
+
+    public void ItemPickUp(ItemSO itemSo)
+    {
+        if (items.Count >= maxHold)
+        {
+            Debug.Log("Inventory full! Cannot pick up more items.");
+            return;
+        }
+
+        items.Add(itemSo);
+        Debug.Log($"Picked up item: {itemSo.name}");
     }
 }

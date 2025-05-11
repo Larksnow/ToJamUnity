@@ -2,31 +2,20 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour
 {
-    public string itemName;
-    
+    public ItemSO itemSo;
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        // 检查是否是玩家角色
-        if (other.CompareTag("Player"))
+        // Check if the object has a PlayerInteraction component
+        PlayerInteraction playerInteraction = other.GetComponent<PlayerInteraction>();
+        if (playerInteraction != null && playerInteraction.items.Count < playerInteraction.maxHold)
         {
-            // 调用玩家脚本的拾取物品方法
-            other.GetComponent<PlayerInteraction>().ItemPickUp(this);
-
-            // 销毁道具物体（假设物品被拾取后消失）
-            Destroy(gameObject);
+            playerInteraction.ItemPickUp(itemSo);
+            Destroy(gameObject); // Remove item from the scene
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    void Update() { }
 }

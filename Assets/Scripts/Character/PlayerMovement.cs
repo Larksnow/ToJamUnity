@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public SpriteRenderer outfitRenderer;
     public Color[] playerColors;
     public int playerID;
+    private PlayerInteraction interaction;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
         originalScale = transform.localScale;
 
         var playerInput = GetComponent<PlayerInput>();
+        interaction = GetComponent<PlayerInteraction>();
         playerID = playerInput.playerIndex;
 
         if (outfitRenderer != null && playerID < playerColors.Length)
@@ -56,6 +58,22 @@ public class Player : MonoBehaviour
     {
         moveInput = value.Get<Vector2>();
     }
+
+    public void OnUseItem1()
+    {
+        interaction.UseItem(0);
+    }
+
+    public void OnUseItem2()
+    {
+        interaction.UseItem(1);
+    }
+
+    public void OnUseItem3()
+    {
+        interaction.UseItem(2);
+    }
+
     
     void HandleMovement()
     {

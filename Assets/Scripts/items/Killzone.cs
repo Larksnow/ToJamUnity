@@ -5,19 +5,28 @@ public class Killzone : MonoBehaviour
 {
     public GameObject filling;
     public float activeTimer = 1f;
+
     public int targetID;
+    public SpriteRenderer backgroundRenderer;
+    public SpriteRenderer fillingRenderer;
+    public Color[] backColors;
+    public Color[] frontColors;
 
     private BoxCollider2D killzoneCollider;
+    private bool isActive = false;
 
     void Start()
     {
         killzoneCollider = GetComponent<BoxCollider2D>();
         AudioManager.main.PostEvent("Play_ChargeAndShoot");
+
         if (killzoneCollider == null)
         {
             Debug.LogError("Killzone requires a BoxCollider2D.");
             return;
         }
+
+        killzoneCollider.isTrigger = true;
 
         if (filling != null)
         {
@@ -26,31 +35,37 @@ public class Killzone : MonoBehaviour
 
             filling.transform.DOScaleX(1f, activeTimer)
                 .SetEase(Ease.InExpo)
-                .OnComplete(CheckAndKillPlayerThenDisappear);
+                .OnComplete(() =>
+                {
+                    isActive = true;
+                    Debug.Log("Killzone activated");
+
+                    // Immediately play shake effect and destroy
+                    transform.DOShakeScale(0.5f, 1.5f)
+                             .OnComplete(() => Destroy(gameObject));
+                });
         }
     }
 
-    void CheckAndKillPlayerThenDisappear()
+    public void InitializeColor()
     {
-        Debug.Log("2D Killzone activated — checking for player");
+        int callerID = (targetID == 0) ? 1 : 0;
+        if (backgroundRenderer != null)
+            backgroundRenderer.color = backColors[callerID];
 
-        Bounds bounds = killzoneCollider.bounds;
-        Vector2 center = bounds.center;
-        Vector2 size = bounds.size;
+        if (fillingRenderer != null)
+            fillingRenderer.color = frontColors[callerID];
+    }
 
-        Collider2D[] hits = Physics2D.OverlapBoxAll(center, size, 0f);
-        foreach (Collider2D hit in hits)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!isActive) return;
+
+        Player player = other.GetComponent<Player>();
+        if (player != null && player.playerID == targetID)
         {
-            Player player = hit.GetComponent<Player>();
-            if (player != null && player.playerID == targetID)
-            {
-                Debug.Log("Player found and killed.");
-                player.Die();
-            }
+            Debug.Log("Player found and killed by trigger.");
+            player.Die();
         }
-
-        // Optionally animate shrink and destroy after a short delay
-        transform.DOShakeScale(0.5f, 1.5f)
-             .OnComplete(() => Destroy(gameObject));
     }
 }

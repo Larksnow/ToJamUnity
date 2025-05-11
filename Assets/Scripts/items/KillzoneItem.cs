@@ -1,9 +1,13 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "KillzoneItem", menuName = "Items/KillzoneItem")]
-public class KillzoneItemSO : ScriptableObject
+public class KillzoneItemSO : ItemSO
 {
     public GameObject killzonePrefab; // Assign in Inspector
+    public override void UseItem(Player user)
+    {
+        SpawnKillzone(user.playerID);
+    }
     
     // Function to spawn a killzone at the opponent's position
     public void SpawnKillzone(int callerID)
@@ -32,6 +36,7 @@ public class KillzoneItemSO : ScriptableObject
         if (killzoneScript != null)
         {
             killzoneScript.targetID = opponent.playerID;
+            killzoneScript.InitializeColor();
         }
     }
 

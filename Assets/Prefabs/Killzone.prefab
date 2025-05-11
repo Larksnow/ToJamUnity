@@ -256,6 +256,14 @@ MonoBehaviour:
   filling: {fileID: 5150695597428507914}
   activeTimer: 1
   targetID: 0
+  backgroundRenderer: {fileID: 979796749830751011}
+  fillingRenderer: {fileID: 2758153497262310163}
+  backColors:
+  - {r: 1, g: 0.78431374, b: 0.827451, a: 0.19607843}
+  - {r: 0.6773585, g: 0.75939226, b: 1, a: 0.19607843}
+  frontColors:
+  - {r: 0.75686276, g: 0, b: 0.15294118, a: 1}
+  - {r: 0, g: 0.28469962, b: 0.75686276, a: 1}
 --- !u!61 &448308656722610188
 BoxCollider2D:
   m_ObjectHideFlags: 0
