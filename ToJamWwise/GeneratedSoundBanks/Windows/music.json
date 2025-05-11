@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{86A1168B-8FA1-3EA3-6DAD-BFC4F20C23AA}",
+    "Hash": "{303E2759-624E-F60A-3BF3-FC72079078DC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_loop3_lp.wav",
-      "CachePath": "79/{79F32D14-4657-0AD3-9C2B-424B3B59777D}.wem"
+      "CachePath": "20/{2056C74F-A228-915D-F0ED-B4BC4C2159EC}.wem"
      },
      {
       "Id": "445588318",
@@ -56,6 +56,14 @@
       "CachePath": "38/{38706669-F8AB-6EFB-7A36-DD6DC3435D0B}.wem"
      },
      {
+      "Id": "554051854",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_ClockCountdown30Seconds_nl.wav",
+      "CachePath": "28/{282C5D6C-388A-BA92-5E66-9A6D88222171}.wem"
+     },
+     {
       "Id": "704715968",
       "Language": "SFX",
       "Streaming": "false",
@@ -84,13 +92,10 @@
      {
       "Id": "2932040671",
       "Name": "Play_Music",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Music",
       "GUID": "{8484E4B0-10B4-40EF-85B7-F26D3CE57D9F}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "282055423"
-       },
        {
         "Id": "704715968"
        },
@@ -827,6 +832,38 @@
         "GUID": "{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}"
        }
       ]
+     },
+     {
+      "Id": "3465911149",
+      "Name": "Play_SpeedUpMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_SpeedUpMusic",
+      "GUID": "{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}",
+      "DurationType": "OneShot",
+      "DurationMin": "30.364458",
+      "DurationMax": "30.364458",
+      "MediaRefs": [
+       {
+        "Id": "554051854"
+       }
+      ]
+     },
+     {
+      "Id": "1699119864",
+      "Name": "Stop_MusicTwoSeconds",
+      "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Stop_MusicTwoSeconds",
+      "GUID": "{B323EA8A-E6C6-42E5-B1CD-140461257E38}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2635112718",
+      "Name": "SpeedUpMusic",
+      "ObjectPath": "\\Game Parameters\\NonSpectrumRTPCs\\SpeedUpMusic",
+      "GUID": "{7C94B49E-1054-4724-B8C5-D0BCA3203417}"
      }
     ],
     "StateGroups": [
@@ -877,6 +914,6 @@
     ]
    }
   ],
-  "FileHash": "{9460962B-BA95-DF87-9430-085FE62EC515}"
+  "FileHash": "{08EDB93B-94FF-6C70-5FFE-4425B389C8B5}"
  }
 }

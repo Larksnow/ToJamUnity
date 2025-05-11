@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_SPEEDUPMUSIC = 3465911149U;
+        static const AkUniqueID STOP_MUSICTWOSECONDS = 1699119864U;
     } // namespace EVENTS
 
     namespace STATES
@@ -47,6 +49,7 @@ namespace AK
         static const AkUniqueID _2350HZ = 3984858204U;
         static const AkUniqueID _5000HZ = 1054198269U;
         static const AkUniqueID _8100HZ = 3308542171U;
+        static const AkUniqueID SPEEDUPMUSIC = 2635112718U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

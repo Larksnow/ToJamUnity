@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{97F0C23A-F59A-1717-CC4B-DE1F816F9474}",
+    "Hash": "{4839C2F2-DA59-7146-9E0F-EC28F766D093}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -446,6 +446,12 @@
       "GUID": "{4520960F-3796-4BE7-96AC-7A5E4D0F81C2}"
      },
      {
+      "Id": "2635112718",
+      "Name": "SpeedUpMusic",
+      "ObjectPath": "\\Game Parameters\\NonSpectrumRTPCs\\SpeedUpMusic",
+      "GUID": "{7C94B49E-1054-4724-B8C5-D0BCA3203417}"
+     },
+     {
       "Id": "3272834542",
       "Name": "_220Hz",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\_220Hz",
@@ -512,6 +518,6 @@
     ]
    }
   ],
-  "FileHash": "{3040D4E4-90BD-8061-415A-63399A83481A}"
+  "FileHash": "{EF73BF85-04B9-B1A2-90E1-10DF0F36C371}"
  }
 }

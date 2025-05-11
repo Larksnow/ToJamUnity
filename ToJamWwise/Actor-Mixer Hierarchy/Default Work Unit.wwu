@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="ItemSFX" ID="{BBEFC586-95D7-4E81-A0B1-DF5F86F4EB0A}" ShortID="117142908">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_SpeedUpClock_nl" ID="{B592E67B-0681-4DAA-81DA-177BA3F11D0F}" ShortID="296303497">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ClockCountdown30Seconds_nl" ID="{C5CF581B-BEC9-4B37-AA4D-C08DCB66496B}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ClockCountdown30Seconds_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="554051854"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ClockCountdown30Seconds_nl" ID="{C5CF581B-BEC9-4B37-AA4D-C08DCB66496B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

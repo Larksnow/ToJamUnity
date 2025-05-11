@@ -9,6 +9,14 @@
 							<ObjectRef Name="Play_Music" ID="{8484E4B0-10B4-40EF-85B7-F26D3CE57D9F}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_SpeedUpMusic" ID="{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_MusicTwoSeconds" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -36,6 +44,10 @@
 							<Value>-18</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SpeedUpMusic" ID="{7C94B49E-1054-4724-B8C5-D0BCA3203417}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="_420Hz" ID="{6D81C268-0701-4B2E-879E-44318F0412A7}"/>
 							<Value>-18</Value>
 						</RTPCValue>
@@ -53,7 +65,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Three" ID="{84FE0DC2-F374-434B-ACF4-7E200CDAE3EF}"/>
+						<CurrentStateRef Name="One" ID="{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
