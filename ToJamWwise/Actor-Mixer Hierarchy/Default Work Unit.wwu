@@ -66,6 +66,90 @@
 								<ActiveSource Name="sfx_ClockSlowDown_nl" ID="{739C60B9-8C1C-4D5E-B394-CC36A08AF8F0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="sfx_PickUp_nl" ID="{D07FFB68-C5B2-4DD6-AA3F-A6FB113C8B93}" ShortID="988846764">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{85F39150-9979-458B-816C-C2915CEC2B1D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_PickUp_nl" ID="{A68B1103-AC51-41FB-A92A-B72850F75023}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_PickUp_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="713682749"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_PickUp_nl" ID="{A68B1103-AC51-41FB-A92A-B72850F75023}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Use_nl" ID="{58D14C52-4A4D-43E2-99DD-05040FB6FCBF}" ShortID="453779950">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D29D57D3-CFA9-4AF7-828F-60F315F5C567}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Use_nl" ID="{FE4D2454-9112-4D7C-B2D9-8296623488EC}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Use_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="413807228"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Use_nl" ID="{FE4D2454-9112-4D7C-B2D9-8296623488EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="sfx_Shoot" ID="{E1DFF348-6951-42E5-A505-DD20E6DE5B02}" ShortID="317166665">
@@ -588,6 +672,93 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_Cheer_nl_03" ID="{67A03568-4935-42BA-BA66-E49E209A108B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="sfx_FightFightFight" ID="{30C26F8F-5590-473E-9758-5C8C4D232536}" ShortID="104973983">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{06FD0423-9415-407A-B40C-ACC8F0A334F5}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_FightFightFight_nl_01" ID="{369B1A50-DF50-4098-81E3-B5BF3C78D538}" ShortID="117682025">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_FightFightFight_nl_01" ID="{7759ED4B-386F-4899-84EA-B5343F6D66EF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_FightFightFight_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="403820254"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_FightFightFight_nl_01" ID="{7759ED4B-386F-4899-84EA-B5343F6D66EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_FightFightFight_nl_02" ID="{985AEBFB-4FDE-468B-B4EA-FC958C035477}" ShortID="11476666">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_FightFightFight_nl_02" ID="{8D784A82-068A-45D9-888F-216AFBEC2C5D}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_FightFightFight_nl_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="471652688"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_FightFightFight_nl_02" ID="{8D784A82-068A-45D9-888F-216AFBEC2C5D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_FightFightFight_nl_03" ID="{744407DC-5322-4161-B805-41F2C85E2E25}" ShortID="1033323753">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_FightFightFight_nl_03" ID="{FEDCF6B7-CBF7-47ED-864D-C826E9F7FF45}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_FightFightFight_nl_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="873480278"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_FightFightFight_nl_03" ID="{FEDCF6B7-CBF7-47ED-864D-C826E9F7FF45}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

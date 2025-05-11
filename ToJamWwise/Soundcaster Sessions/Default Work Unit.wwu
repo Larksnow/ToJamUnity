@@ -10,8 +10,12 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_ChargeAndShoot" ID="{0A9F78D5-FAA9-4141-AA0F-595E58EC76B6}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<ObjectRef Name="Play_PickUpItem" ID="{123C692F-BF21-4A63-B75D-446603C5A749}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
 							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ChargeAndShoot" ID="{0A9F78D5-FAA9-4141-AA0F-595E58EC76B6}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_SpeedUpMusic" ID="{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
@@ -22,8 +26,12 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Death" ID="{DABA6F5C-B999-4B38-89B9-F18A2F68C9E2}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<ObjectRef Name="Play_UseItem" ID="{94EC6AA9-42AE-4150-8145-EB3CEB6AEA86}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
 							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Death" ID="{DABA6F5C-B999-4B38-89B9-F18A2F68C9E2}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Stop_MusicTwoSeconds" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
