@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{9CB016D9-C075-10CD-B618-1AC6BDEAABCA}",
+    "Hash": "{25BF5937-6B21-2408-3363-170544BB773E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_loop4_lp.wav",
-      "CachePath": "38/{38706669-F8AB-6EFB-7A36-DD6DC3435D0B}.wem"
+      "CachePath": "AA/{AA6C6B29-E070-625E-5489-B4DBC5F05B9B}.wem"
      },
      {
       "Id": "704715968",
@@ -918,6 +918,6 @@
     ]
    }
   ],
-  "FileHash": "{AA557CA4-BC10-B958-DFE1-2218DB1161BE}"
+  "FileHash": "{8689B5DC-6C4B-35D4-80D2-367427AEF0AD}"
  }
 }
