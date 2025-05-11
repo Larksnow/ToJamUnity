@@ -14,6 +14,10 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_SlowDownMusic" ID="{B78C03CC-ECF8-49DE-BDA4-53F0C249BF9B}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Stop_MusicTwoSeconds" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -60,12 +64,16 @@
 							<Value>-18</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SlowDownMusic" ID="{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="_770Hz" ID="{9DEC2D12-7458-4FD8-877E-D2893E622A86}"/>
 							<Value>-18</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="One" ID="{0200B4F9-3A29-44A2-BC3B-6B5199FEA616}"/>
+						<CurrentStateRef Name="Three" ID="{84FE0DC2-F374-434B-ACF4-7E200CDAE3EF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

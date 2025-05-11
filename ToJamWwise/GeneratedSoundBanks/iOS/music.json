@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{303E2759-624E-F60A-3BF3-FC72079078DC}",
+    "Hash": "{9CB016D9-C075-10CD-B618-1AC6BDEAABCA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -54,14 +54,6 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_loop4_lp.wav",
       "CachePath": "38/{38706669-F8AB-6EFB-7A36-DD6DC3435D0B}.wem"
-     },
-     {
-      "Id": "554051854",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_ClockCountdown30Seconds_nl.wav",
-      "CachePath": "28/{282C5D6C-388A-BA92-5E66-9A6D88222171}.wem"
      },
      {
       "Id": "704715968",
@@ -834,18 +826,24 @@
       ]
      },
      {
+      "Id": "2557760338",
+      "Name": "Play_SlowDownMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_SlowDownMusic",
+      "GUID": "{B78C03CC-ECF8-49DE-BDA4-53F0C249BF9B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "3465911149",
       "Name": "Play_SpeedUpMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_SpeedUpMusic",
       "GUID": "{15C02C73-8D37-4880-BC7C-2B761EB5C1CF}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "30.364458",
-      "DurationMax": "30.364458",
-      "MediaRefs": [
-       {
-        "Id": "554051854"
-       }
-      ]
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "1699119864",
@@ -859,6 +857,12 @@
      }
     ],
     "GameParameters": [
+     {
+      "Id": "2546080279",
+      "Name": "SlowDownMusic",
+      "ObjectPath": "\\Game Parameters\\NonSpectrumRTPCs\\SlowDownMusic",
+      "GUID": "{20D3C6C2-7BF6-4E0F-84B4-FC377E7069CD}"
+     },
      {
       "Id": "2635112718",
       "Name": "SpeedUpMusic",
@@ -914,6 +918,6 @@
     ]
    }
   ],
-  "FileHash": "{D6D7EC28-B8BA-F2D3-70E1-5D578A7E5CDF}"
+  "FileHash": "{AA557CA4-BC10-B958-DFE1-2218DB1161BE}"
  }
 }
