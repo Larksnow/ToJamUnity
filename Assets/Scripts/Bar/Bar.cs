@@ -5,7 +5,7 @@ public class Bar : MonoBehaviour
 {
     private Rigidbody2D rb;
     public string rtpcName;
-    private bool colorMode1 = false;
+    private bool colorMode1 = true;
     public int index;
     private SpriteRenderer spriteRenderer;
 
@@ -93,7 +93,7 @@ public class Bar : MonoBehaviour
     {
         // Map height to a hue (e.g., from blue to red)
         float heightT = Mathf.InverseLerp(minHeight, maxHeight, height);
-        float hue = Mathf.Lerp(0.6f, -0.1f, heightT); // 0.6 = blue, 0 = red
+        float hue = Mathf.Lerp(0.65f, -0.2f, heightT); // 0.6 = blue, 0 = red
         Color newColor = Color.HSVToRGB(hue, 1f, 1f);
         spriteRenderer.color = newColor;
     }

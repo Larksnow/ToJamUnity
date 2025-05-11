@@ -1,13 +1,15 @@
 using UnityEngine;
 using System.Collections; // Required for IEnumerator
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerMovement2D : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public float jumpDelay = 0.2f;
+    private Vector2 moveInput = Vector2.zero;
 
     public float horizontalDampening = 0.5f;
 
@@ -21,17 +23,27 @@ public class PlayerMovement2D : MonoBehaviour
     private Animator animator;
     private Vector3 originalScale;
     private bool isFacingRight = true;
+    public SpriteRenderer outfitRenderer;
+    public Color[] playerColors;
+    public int playerID;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         originalScale = transform.localScale;
+
+        var playerInput = GetComponent<PlayerInput>();
+        playerID = playerInput.playerIndex;
+
+        if (outfitRenderer != null && playerID < playerColors.Length)
+        {
+            outfitRenderer.color = playerColors[playerID];
+        }
     }
     void FixedUpdate()
     {
         HandleMovement();
-        WrapAroundScreen();
     }
     
     void Update()
@@ -40,16 +52,23 @@ public class PlayerMovement2D : MonoBehaviour
         UpdateAnimationState();
     }
     
+    public void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+    }
+    
     void HandleMovement()
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
-        
-        animator.SetFloat("moveSpeed", Mathf.Abs(moveInput));
-        
+        // Apply horizontal movement
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+
+        animator.SetFloat("moveSpeed", Mathf.Abs(moveInput.x));
+
         // Flip character based on movement direction
-        if (moveInput > 0 && !isFacingRight || moveInput < 0 && isFacingRight)
+        if (moveInput.x > 0 && !isFacingRight || moveInput.x < 0 && isFacingRight)
             Flip();
+
+        WrapAroundScreen();
     }
     
     void HandleJump()
@@ -94,7 +113,6 @@ public class PlayerMovement2D : MonoBehaviour
         {
             IsGrounded = true;
             animator.SetTrigger("Land");
-
             Instantiate(landCloudPrefab, transform.position, Quaternion.identity);
         }
     }
@@ -130,6 +148,11 @@ public class PlayerMovement2D : MonoBehaviour
         }
 
         transform.position = Camera.main.ViewportToWorldPoint(viewPos);
+    }
+
+    public void Die()
+    {
+        Debug.Log("Player " + playerID + " died");
     }
 
 }

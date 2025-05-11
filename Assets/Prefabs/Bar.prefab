@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5061714688041257521}
   - component: {fileID: 1117180148085538765}
   - component: {fileID: 4961375482903466015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rtpcName: 
+  index: 0
   moveRight: 1
-  stepSize: 1
 --- !u!61 &4961375482903466015
 BoxCollider2D:
   m_ObjectHideFlags: 0
