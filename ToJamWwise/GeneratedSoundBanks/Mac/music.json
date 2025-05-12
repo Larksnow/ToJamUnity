@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{FCA6BF50-DE3C-EB0F-77F1-2B3758C8FF62}",
+    "Hash": "{C9BBB2F9-BE34-4504-CA5E-B1F41B20ECDC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -834,6 +834,20 @@
       ]
      },
      {
+      "Id": "3988929873",
+      "Name": "Play_PauseMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_PauseMusic",
+      "GUID": "{B323EA8A-E6C6-42E5-B1CD-140461257E38}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.294125",
+      "DurationMax": "5.294125",
+      "MediaRefs": [
+       {
+        "Id": "102432282"
+       }
+      ]
+     },
+     {
       "Id": "2557760338",
       "Name": "Play_SlowDownMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_SlowDownMusic",
@@ -852,20 +866,6 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
-     },
-     {
-      "Id": "1699119864",
-      "Name": "Stop_MusicTwoSeconds",
-      "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Stop_MusicTwoSeconds",
-      "GUID": "{B323EA8A-E6C6-42E5-B1CD-140461257E38}",
-      "DurationType": "OneShot",
-      "DurationMin": "5.294125",
-      "DurationMax": "5.294125",
-      "MediaRefs": [
-       {
-        "Id": "102432282"
-       }
-      ]
      }
     ],
     "GameParameters": [
@@ -930,6 +930,6 @@
     ]
    }
   ],
-  "FileHash": "{B9B232DA-D0C2-2ED7-70EA-DCA869638C6E}"
+  "FileHash": "{EE377067-5ADC-E2EF-C8AE-9BE9CF887C23}"
  }
 }

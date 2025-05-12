@@ -1,8 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1699119864	Stop_MusicTwoSeconds			\Default Work Unit\MusicParameterControl\Stop_MusicTwoSeconds	
 	2557760338	Play_SlowDownMusic			\Default Work Unit\MusicParameterControl\Play_SlowDownMusic	
 	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
 	3465911149	Play_SpeedUpMusic			\Default Work Unit\MusicParameterControl\Play_SpeedUpMusic	
+	3988929873	Play_PauseMusic			\Default Work Unit\MusicParameterControl\Play_PauseMusic	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1786804762	Damage			\Default Work Unit\Damage	

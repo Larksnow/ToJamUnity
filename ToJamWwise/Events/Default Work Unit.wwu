@@ -63,7 +63,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_MusicTwoSeconds" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}">
+						<Event Name="Play_PauseMusic" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}">
 							<ChildrenList>
 								<Action Name="" ID="{9E37EE80-643F-40ED-B0E3-698153E14E33}" ShortID="1063803299">
 									<PropertyList>
