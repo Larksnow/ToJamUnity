@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{12309208-4F92-4519-B542-425117E3415F}",
     "Language": "SFX",
-    "Hash": "{E9300E29-EA0C-D675-A824-2E3C5A59F97A}",
+    "Hash": "{95D0814B-6846-59E2-6FE8-CCDDE1B9CC6B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -259,8 +259,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_PickUpItem",
       "GUID": "{123C692F-BF21-4A63-B75D-446603C5A749}",
       "DurationType": "OneShot",
-      "DurationMin": "1.8877485",
-      "DurationMax": "2.1189263",
+      "DurationMin": "2",
+      "DurationMax": "2.0586045",
       "MediaRefs": [
        {
         "Id": "713682749"
@@ -273,8 +273,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_UseItem",
       "GUID": "{94EC6AA9-42AE-4150-8145-EB3CEB6AEA86}",
       "DurationType": "OneShot",
-      "DurationMin": "3.775497",
-      "DurationMax": "4.2378526",
+      "DurationMin": "3.8861277",
+      "DurationMax": "4",
       "MediaRefs": [
        {
         "Id": "413807228"
@@ -284,6 +284,6 @@
     ]
    }
   ],
-  "FileHash": "{094925BE-8196-6836-EC2A-CF6FFAEABAD6}"
+  "FileHash": "{D2857477-0068-43DD-F251-3E91E85D10BD}"
  }
 }
