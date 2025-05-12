@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{7AB76D36-AE00-D1CB-BEDC-4FA6A451015C}",
+    "Hash": "{FCA6BF50-DE3C-EB0F-77F1-2B3758C8FF62}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
     "Media": [
+     {
+      "Id": "102432282",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_MusicMutedAudienceClap_nl_02.wav",
+      "CachePath": "E3/{E32AFB21-D015-934A-E048-00EB2453CD1A}.wem"
+     },
      {
       "Id": "282055423",
       "Language": "SFX",
@@ -24,28 +32,12 @@
       "CachePath": "20/{2056C74F-A228-915D-F0ED-B4BC4C2159EC}.wem"
      },
      {
-      "Id": "403820254",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_FightFightFight_nl_01.wav",
-      "CachePath": "57/{578F6428-CBCA-A52A-63BB-0F2C543A3575}.wem"
-     },
-     {
       "Id": "445588318",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_loop1_lp.wav",
       "CachePath": "3C/{3CD0FEE0-4534-3D80-76DE-7045130AAA14}.wem"
-     },
-     {
-      "Id": "471652688",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_FightFightFight_nl_02.wav",
-      "CachePath": "05/{05E0133B-C064-F753-B36A-6D10B1B8095B}.wem"
      },
      {
       "Id": "481610977",
@@ -94,14 +86,6 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_transition3_nl.wav",
       "CachePath": "B3/{B3C1A634-8787-BC32-9374-7B1C321A1B84}.wem"
-     },
-     {
-      "Id": "873480278",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "sfx_FightFightFight_nl_03.wav",
-      "CachePath": "4F/{4FA206EA-F233-35BF-C77B-991409C261A1}.wem"
      }
     ],
     "Events": [
@@ -875,17 +859,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Stop_MusicTwoSeconds",
       "GUID": "{B323EA8A-E6C6-42E5-B1CD-140461257E38}",
       "DurationType": "OneShot",
-      "DurationMin": "3",
-      "DurationMax": "3",
+      "DurationMin": "5.294125",
+      "DurationMax": "5.294125",
       "MediaRefs": [
        {
-        "Id": "403820254"
-       },
-       {
-        "Id": "471652688"
-       },
-       {
-        "Id": "873480278"
+        "Id": "102432282"
        }
       ]
      }
@@ -952,6 +930,6 @@
     ]
    }
   ],
-  "FileHash": "{43BD88B9-B707-79F0-066A-3293ED5185E3}"
+  "FileHash": "{B9B232DA-D0C2-2ED7-70EA-DCA869638C6E}"
  }
 }
