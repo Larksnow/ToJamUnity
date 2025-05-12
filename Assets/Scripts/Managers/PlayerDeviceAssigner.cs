@@ -33,9 +33,9 @@ public class PlayerDeviceAssigner : MonoBehaviour
         }
         else
         {
-            // Two players share one keyboard
-            PairDevice(player1, keyboard);
-            PairDevice(player2, keyboard);
+            // // Two players share one keyboard
+            // PairDevice(player1, keyboard);
+            // PairDevice(player2, keyboard);
         }
     }
 

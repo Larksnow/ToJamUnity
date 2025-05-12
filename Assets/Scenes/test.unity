@@ -2224,6 +2224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemList
       objectReference: {fileID: 0}
+    - target: {fileID: 9048962348137612081, guid: e97326c136c9dc64cafd7464c76b81e9, type: 3}
+      propertyPath: eventSO
+      value: 
+      objectReference: {fileID: 11400000, guid: a68189bbe9813e84c9b60f2e53e0db1b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2299,6 +2303,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1243240403052408217, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
+      propertyPath: itemChangeEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: a68189bbe9813e84c9b60f2e53e0db1b, type: 2}
     - target: {fileID: 4930787843320432893, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
       propertyPath: playerID
       value: 1
@@ -3876,6 +3884,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1243240403052408217, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
+      propertyPath: itemChangeEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 67f7eaf73fe14cc45a088da910e3ccd7, type: 2}
     - target: {fileID: 5022257802733789757, guid: 636e45b6d6830c840946b0e6b11fe17d, type: 3}
       propertyPath: m_Name
       value: player1
@@ -4835,6 +4847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemList
       objectReference: {fileID: 0}
+    - target: {fileID: 9048962348137612081, guid: e97326c136c9dc64cafd7464c76b81e9, type: 3}
+      propertyPath: eventSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 67f7eaf73fe14cc45a088da910e3ccd7, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4911,6 +4927,6 @@ SceneRoots:
   - {fileID: 548503314}
   - {fileID: 5457615523230827676}
   - {fileID: 1870816944}
-  - {fileID: 1267667558}
   - {fileID: 1748505554}
   - {fileID: 947775599}
+  - {fileID: 1267667558}

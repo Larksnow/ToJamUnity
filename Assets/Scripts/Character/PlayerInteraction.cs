@@ -3,28 +3,25 @@ using System.Collections.Generic;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public List<ItemSO> items = new List<ItemSO>();
+    public ItemSO[] items;
     public int maxHold = 3; // Max number of items player can carry
     public Player player;
+    public ObjectEventSO itemChangeEvent;
 
     void Start()
     {
         player = GetComponent<Player>();
-    }
-
-    void Update()
-    {
-        // Example: use first item
-        // if (Input.GetKeyDown(KeyCode.E)) UseItem(0);
+        items = new ItemSO[maxHold];
     }
 
     public void UseItem(int index)
     {
-        if (index >= 0 && index < items.Count && items[index] != null)
+        if (index >= 0 && index < items.Length && items[index] != null)
         {
             AudioManager.main.PostEvent("Play_UseItem");
             items[index].UseItem(player);
-            items.RemoveAt(index);
+            items[index] = null;
+            itemChangeEvent.RaiseEvent(items, this);
         }
         else
         {
@@ -32,15 +29,21 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    public void ItemPickUp(ItemSO itemSo)
+    public void ItemPickUp(Item item)
     {
-        if (items.Count >= maxHold)
+        ItemSO itemData = item.itemData;
+        for (int i = 0; i < items.Length; i++)
         {
-            Debug.Log("Inventory full! Cannot pick up more items.");
-            return;
+            if (items[i] == null)
+            {
+                items[i] = itemData;
+                Debug.Log($"Picked up item: {itemData.name} into slot {i}");
+                Destroy(item.gameObject);
+                itemChangeEvent.RaiseEvent(items, this);
+                AudioManager.main.PostEvent("Play_PickUpItem");
+                return;
+            }
         }
-
-        items.Add(itemSo);
-        Debug.Log($"Picked up item: {itemSo.name}");
+        Debug.Log("Inventory full! Cannot pick up more items.");
     }
 }
