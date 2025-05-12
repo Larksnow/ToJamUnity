@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
+  - Mac
   - Windows
   PlatformSettingsList:
+  - {fileID: 11400000, guid: 87a894146f0934a4f8089248e337d3e1, type: 2}
   - {fileID: 11400000, guid: 0d4e4977dc4030c4da3d84c15cded4dd, type: 2}
   InvalidReferencePlatforms:
   - iOS
@@ -23,7 +25,7 @@ MonoBehaviour:
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
     m_IsDecodedBankEnabled: 0
-    m_IsAutoBankEnabled: 1
+    m_IsAutoBankEnabled: 0
     m_DefaultListenerScalingFactor: 1
     m_MaximumNumberOfPositioningPaths: 255
     m_CommandQueueSize: 262144
