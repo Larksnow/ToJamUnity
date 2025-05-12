@@ -33,11 +33,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         originalScale = transform.localScale;
-
-        var playerInput = GetComponent<PlayerInput>();
         interaction = GetComponent<PlayerInteraction>();
-        playerID = playerInput.playerIndex;
-        playerInput.currentActionMap = playerInput.actions.FindActionMap("Player" + (playerID + 1));
         if (outfitRenderer != null && playerID < playerColors.Length)
         {
             outfitRenderer.color = playerColors[playerID];

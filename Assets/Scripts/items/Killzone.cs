@@ -75,6 +75,7 @@ public class Killzone : MonoBehaviour
         {
             Debug.Log("Player entered and was killed.");
             CameraShake.main.TriggerShake();
+            killzoneCollider.enabled = false;
             player.Die();
         }
     }
