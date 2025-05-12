@@ -6,6 +6,6 @@ public class MuteSO : ItemSO
     // This method will be overridden by all item types
     public override void UseItem(Player user)
     {
-        AudioManager.main.PostEvent("Stop_MusicTwoSeconds");
+        AudioManager.main.PostEvent("Play_PauseMusic");
     }
 }
