@@ -374,6 +374,23 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_PlayerWins" ID="{B989F68B-A51D-425B-83D6-7D1FC385A618}">
+							<ChildrenList>
+								<Action Name="" ID="{624ABAB0-0052-4DB8-9E70-B00DAA544B24}" ShortID="916896855">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{2FC5A7A6-A80C-4083-AC2E-88C2C149ECD6}" ShortID="178215742">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CalibrationCelebration_nl" ID="{635BFF92-682C-49AF-9A4C-E4A22BAFD3E7}" WorkUnitID="{1CFA8970-D9DC-4237-BB14-0519B6D7F084}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{F2F25C17-1C1C-4ECE-B008-BA266FBFB9E5}" ShortID="798159196">

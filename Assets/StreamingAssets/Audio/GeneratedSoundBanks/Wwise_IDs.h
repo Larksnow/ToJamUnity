@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PAUSEMUSIC = 3988929873U;
         static const AkUniqueID PLAY_PICKUPITEM = 152276835U;
+        static const AkUniqueID PLAY_PLAYERWINS = 1521400676U;
         static const AkUniqueID PLAY_SLOWDOWNMUSIC = 2557760338U;
         static const AkUniqueID PLAY_SPEEDUPMUSIC = 3465911149U;
         static const AkUniqueID PLAY_USEITEM = 2229253950U;

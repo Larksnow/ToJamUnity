@@ -37,6 +37,10 @@
 							<ObjectRef Name="Play_PauseMusic" ID="{B323EA8A-E6C6-42E5-B1CD-140461257E38}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_PlayerWins" ID="{B989F68B-A51D-425B-83D6-7D1FC385A618}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

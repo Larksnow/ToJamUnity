@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{EDB780C4-83F6-4150-A3AE-8B29E4E3095A}",
     "Language": "SFX",
-    "Hash": "{C9BBB2F9-BE34-4504-CA5E-B1F41B20ECDC}",
+    "Hash": "{00149826-A73B-322B-5D37-01CBD356805F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -62,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_136bpm_loop4_lp.wav",
       "CachePath": "AA/{AA6C6B29-E070-625E-5489-B4DBC5F05B9B}.wem"
+     },
+     {
+      "Id": "606031792",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_CalibrationCelebration_nl.wav",
+      "CachePath": "94/{94F051CB-FDB5-27BF-F5E9-E8A29A2F1297}.wem"
      },
      {
       "Id": "704715968",
@@ -848,6 +856,20 @@
       ]
      },
      {
+      "Id": "1521400676",
+      "Name": "Play_PlayerWins",
+      "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_PlayerWins",
+      "GUID": "{B989F68B-A51D-425B-83D6-7D1FC385A618}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.9539165",
+      "DurationMax": "3.9539165",
+      "MediaRefs": [
+       {
+        "Id": "606031792"
+       }
+      ]
+     },
+     {
       "Id": "2557760338",
       "Name": "Play_SlowDownMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\MusicParameterControl\\Play_SlowDownMusic",
@@ -930,6 +952,6 @@
     ]
    }
   ],
-  "FileHash": "{A33C98C4-6836-2598-8DDF-94CCCF116DAD}"
+  "FileHash": "{93376B74-DDD5-152A-9557-4BF6D0C40E9B}"
  }
 }
