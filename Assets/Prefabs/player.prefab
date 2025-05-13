@@ -135,6 +135,7 @@ MonoBehaviour:
   items: []
   maxHold: 3
   player: {fileID: 0}
+  itemChangeEvent: {fileID: 0}
 --- !u!114 &4930787843320432893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +193,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.1330576, y: -1.7797648}
+  m_Offset: {x: 0.2914034, y: -1.7345232}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -202,7 +203,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.302396, y: 4.7291956}
+  m_Size: {x: 3.768863, y: 3.236221}
   m_EdgeRadius: 0
 --- !u!95 &6967865176611209765
 Animator:
@@ -253,6 +254,6 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
-  m_DefaultActionMap: df70fa95-8a34-4494-b137-73ab6b9c7d37
+  m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

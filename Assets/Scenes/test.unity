@@ -762,8 +762,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 4}
-  m_SizeDelta: {x: 11.7713, y: 5}
+  m_AnchoredPosition: {x: 0.02, y: 4.75}
+  m_SizeDelta: {x: 11.7713, y: 3.6363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272163753
 MonoBehaviour:
@@ -812,8 +812,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1099,15 +1099,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc4d2cf3ce514d469aed75ef34dd98d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefabs:
-  - {fileID: 527194565730143497, guid: beb2efd4bed2a764c9f519522b8a4a13, type: 3}
-  - {fileID: 8854212148142615684, guid: 172dd7aea1ebc354ebd668523fecbf2e, type: 3}
-  - {fileID: 3707816595887093784, guid: fbb80695e9f45824e9b085b33b9cacef, type: 3}
-  maxItemsOnScreen: 4
+  persistentSpawnInterval: 3
+  normalSpawnInterval: 6
   persistentItemPrefab: {fileID: 2758930995055915100, guid: 92f4e59470c0f2846ae9d499ac239a4f, type: 3}
-  spawnInterval: 3
-  destroyAfterSeconds: 10
-  overlapThreshold: 1
+  normalItemPrefabs:
+  - {fileID: 527194565730143497, guid: beb2efd4bed2a764c9f519522b8a4a13, type: 3}
+  - {fileID: 3707816595887093784, guid: fbb80695e9f45824e9b085b33b9cacef, type: 3}
+  - {fileID: 8854212148142615684, guid: 172dd7aea1ebc354ebd668523fecbf2e, type: 3}
+  minX: -8
+  maxX: 8
+  minY: -1
+  maxY: 4
+  minDistance: 2
+  maxAttempts: 10
+  maxNormalItems: 3
 --- !u!4 &391515377
 Transform:
   m_ObjectHideFlags: 0

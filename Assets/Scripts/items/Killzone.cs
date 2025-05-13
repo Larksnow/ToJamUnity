@@ -42,8 +42,11 @@ public class Killzone : MonoBehaviour
                     ActivateKillzone();
                     Debug.Log("Killzone activated");
                     // Immediately play shake effect and destroy
-                    transform.DOShakeScale(0.3f, 1.5f)
-                             .OnComplete(() => Destroy(gameObject));
+                    transform.DOShakeScale(0.2f, 1.5f)
+                        .OnComplete(() => {
+                            killzoneCollider.enabled = false;
+                            Destroy(gameObject);
+                        });
                 });
         }
     }

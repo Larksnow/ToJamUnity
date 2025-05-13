@@ -21,12 +21,5 @@ public class FadeEffect : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        // Fade out when the item is disabled
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.DOFade(0f, fadeDuration); // Fade out to fully transparent
-        }
-    }
+    
 }
