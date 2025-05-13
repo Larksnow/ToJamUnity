@@ -18,13 +18,29 @@ public class ItemListUI : MonoBehaviour
     {
         if (data is ItemSO[] items)
         {
-            Debug.Log("change itemUI");
             UpdateImage(items);
         }
         else
         {
             Debug.LogWarning("ItemListUI received non-ItemSO[] data.");
         }
+    }
+
+    public void OnSchemeChanged(object data)
+    {
+        if (data is string deviceKey)
+        {
+            UpdateText(deviceKey);
+        }
+    }
+    public void UpdateText(string deviceKey)
+    {
+        string actionKey1 = "UseItem1";
+        string actionKey2 = "UseItem2";
+        string actionKey3 = "UseItem3";
+        itemText1.text = GetDisplayBinding(actionKey1, deviceKey);
+        itemText2.text = GetDisplayBinding(actionKey2, deviceKey);
+        itemText3.text = GetDisplayBinding(actionKey3, deviceKey);
     }
 
     public void UpdateImage(ItemSO[] items)
@@ -55,4 +71,39 @@ public class ItemListUI : MonoBehaviour
                 img.enabled = false;
         }
     }
+
+    public string GetDisplayBinding(string actionName, string deviceKey)
+    {
+        if (hardcodedBindings.TryGetValue(actionName, out var deviceMap))
+        {
+            if (deviceMap.TryGetValue(deviceKey, out var binding))
+            {
+                return binding;
+            }
+        }
+        return "N/A";
+    }
+
+    Dictionary<string, Dictionary<string, string>> hardcodedBindings = new Dictionary<string, Dictionary<string, string>>()
+    {
+        { "UseItem1", new Dictionary<string, string> {
+            { "Keyboard_P1", "Q" },
+            { "Keyboard_P2", "J" },
+            { "Xbox", "X" },
+            { "PlayStation", "■" } // Square button
+        }},
+        { "UseItem2", new Dictionary<string, string> {
+            { "Keyboard_P1", "W" },
+            { "Keyboard_P2", "K" },
+            { "Xbox", "Y" },
+            { "PlayStation", "▲" } // Triangle button
+        }},
+        { "UseItem3", new Dictionary<string, string> {
+            { "Keyboard_P1", "E" },
+            { "Keyboard_P2", "L" },
+            { "Xbox", "B" },
+            { "PlayStation", "●" } // Circle button
+        }},
+    };
 }
+
