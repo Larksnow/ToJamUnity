@@ -8,7 +8,7 @@ public class Item : MonoBehaviour
     {
         // Check if the object has a PlayerInteraction component
         PlayerInteraction playerInteraction = other.GetComponent<PlayerInteraction>();
-        playerInteraction.ItemPickUp(this);
+        if (playerInteraction != null) playerInteraction.ItemPickUp(this);
     }
 
     void Start() { }
