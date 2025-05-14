@@ -211,7 +211,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_PauseRetrigger" ID="{91C3870B-1E9A-473A-8B10-4BE1BEDEBD31}">
+						<Event Name="Play_PauseMusicRetrigger" ID="{91C3870B-1E9A-473A-8B10-4BE1BEDEBD31}">
 							<ChildrenList>
 								<Action Name="" ID="{84B7515E-636B-46B1-BC4F-A87C84BC2220}" ShortID="779953398">
 									<PropertyList>

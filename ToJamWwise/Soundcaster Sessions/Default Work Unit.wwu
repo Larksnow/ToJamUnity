@@ -30,7 +30,7 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_PauseRetrigger" ID="{91C3870B-1E9A-473A-8B10-4BE1BEDEBD31}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
+							<ObjectRef Name="Play_PauseMusicRetrigger" ID="{91C3870B-1E9A-473A-8B10-4BE1BEDEBD31}" WorkUnitID="{E1B8A98D-B870-447E-A8A9-85E15CF7C8C6}"/>
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
