@@ -10,6 +10,10 @@ public class Scoreboard : MonoBehaviour
 
     public Color player0Color = Color.red; 
     public Color player1Color = Color.blue;
+    
+    [Header("EndConditions")]
+    [SerializeField] private int winScore = 25;
+    [SerializeField] private float gameOverDelay = 3f;
 
     private void Awake()
     {
@@ -70,6 +74,38 @@ public class Scoreboard : MonoBehaviour
         }else if (sum == 16)
         {
             AudioManager.main.SetState("Damage", "five");
+        }else if (IsGameEnd())
+        {
+            GameManager.main.OnGameEnd();
+            AudioManager.main.PostEvent("Play_PauseMusic");
+            Invoke(nameof(GameOver), gameOverDelay);
+        } 
+    }
+
+    private bool IsGameEnd()
+    {
+        foreach (var score in scores)
+        {
+            if (score >= winScore)
+            {
+                return true;
+            }
         }
+
+        return false;
+    }
+
+    private void GameOver()
+    {
+        if (textMesh != null)
+        {
+            // hardcoded to get winner index
+            string winnerName = scores[0] >=  winScore ? "Red" : "Blue";
+            Color winnerColor = scores[0] >=  winScore ? player0Color : player1Color;
+            string text = $"<color=#{ColorUtility.ToHtmlStringRGB(winnerColor)}>{winnerName}</color>";
+            textMesh.text = $"{text} won!";
+        }
+        
+        AudioManager.main.PostEvent("Play_PlayerWins");
     }
 }
