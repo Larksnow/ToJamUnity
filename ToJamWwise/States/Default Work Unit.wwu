@@ -13,6 +13,13 @@
 						<State Name="Five" ID="{024C42E8-2B2D-4135-B3CE-787C20AC282E}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="PauseMusic" ID="{C4E88FB1-A803-4087-88DF-5EB785D9A992}">
+					<ChildrenList>
+						<State Name="None" ID="{0B4224E0-7069-4B14-BCFB-EF3C3B64279F}"/>
+						<State Name="Yes" ID="{7430ED4D-7004-4E6A-8755-CF1E5649C5FE}"/>
+						<State Name="No" ID="{0F11F565-098E-49EB-BCA0-41305513061F}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
