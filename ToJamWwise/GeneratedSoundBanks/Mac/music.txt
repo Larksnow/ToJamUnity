@@ -1,14 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1800006	Play_PauseMusicRetrigger			\Default Work Unit\MusicParameterControl\Play_PauseMusicRetrigger	
 	1521400676	Play_PlayerWins			\Default Work Unit\MusicParameterControl\Play_PlayerWins	
+	2369115902	State_PauseOff			\Default Work Unit\MusicParameterControl\State_PauseOff	
 	2557760338	Play_SlowDownMusic			\Default Work Unit\MusicParameterControl\Play_SlowDownMusic	
+	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
 	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
+	3324308619	Play_MusicAfterPause			\Default Work Unit\Music\Play_MusicAfterPause	
 	3465911149	Play_SpeedUpMusic			\Default Work Unit\MusicParameterControl\Play_SpeedUpMusic	
 	3988929873	Play_PauseMusic			\Default Work Unit\MusicParameterControl\Play_PauseMusic	
 
 State Group	ID	Name			Wwise Object Path	Notes
+	1127073398	PauseMusic			\Default Work Unit\PauseMusic	
 	1786804762	Damage			\Default Work Unit\Damage	
 
 State	ID	Name	State Group			Notes
+	748895195	None	PauseMusic			
+	979470758	Yes	PauseMusic			
+	1668749452	No	PauseMusic			
 	678209053	Two	Damage			
 	748895195	None	Damage			
 	912956111	Three	Damage			
@@ -21,14 +29,23 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2635112718	SpeedUpMusic			\NonSpectrumRTPCs\SpeedUpMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	102432282	sfx_MusicMutedAudienceClap_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\E3\{E32AFB21-D015-934A-E048-00EB2453CD1A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_MusicMutedAudienceClap\sfx_MusicMutedAudienceClap_nl_01		1016568
-	282055423	mus_4-4_136bpm_loop3_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\20\{2056C74F-A228-915D-F0ED-B4BC4C2159EC}.wem		\Interactive Music Hierarchy\Default Work Unit\Music4\Loop3\mus_4-4_136bpm_loop3_lp\mus_4-4_136bpm_loop3_lp		2033040
+	35965008	sfx_Stop_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\B6\{B63FB8ED-4CA4-F3F6-1486-245FCB8E7772}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_Stop\sfx_Stop_nl_01		204252
+	97465444	sfx_SpeedUp_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\A9\{A9541DD3-BB6E-83CF-1DBF-77759166DE86}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_SpeedUp\sfx_SpeedUp_nl_02		282452
+	282055423	mus_4-4_136bpm_loop3_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\20\{2056C74F-A228-915D-F0ED-B4BC4C2159EC}.wem		\Interactive Music Hierarchy\Default Work Unit\Music3\Loop3\mus_4-4_136bpm_loop3_lp\mus_4-4_136bpm_loop3_lp		2033040
+	303861602	sfx_Silence_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\58\{5825A3FF-8FA6-DDC7-1096-C489FF7C9B4B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music3\PauseMusic\sfx_Silence_nl\sfx_Silence_nl		677744
 	445588318	mus_4-4_136bpm_loop1_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\3C\{3CD0FEE0-4534-3D80-76DE-7045130AAA14}.wem		\Interactive Music Hierarchy\Default Work Unit\Music0\Loop1\mus_4-4_136bpm_loop1_lp\mus_4-4_136bpm_loop1_lp		1355392
-	481610977	mus_4-4_136bpm_loop2_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\9D\{9DF7149A-7C42-B6FE-EE10-78C4D8E09C31}.wem		\Interactive Music Hierarchy\Default Work Unit\Music10\Loop2\mus_4-4_136bpm_loop2_lp\mus_4-4_136bpm_loop2_lp		1355392
-	545942747	mus_4-4_136bpm_loop5_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\38\{38BB3AED-DC29-309F-0DB8-33C2111B0316}.wem		\Interactive Music Hierarchy\Default Work Unit\Music7\Loop5\mus_4-4_136bpm_loop5_lp\mus_4-4_136bpm_loop5_lp		2710688
-	549390272	mus_4-4_136bpm_loop4_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\AA\{AA6C6B29-E070-625E-5489-B4DBC5F05B9B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music0\Loop4\mus_4-4_136bpm_loop4_lp\mus_4-4_136bpm_loop4_lp		1355392
+	451747458	sfx_Stop_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\35\{35FB9192-8B56-6DA8-84DC-B1B25F79A84A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_Stop\sfx_Stop_nl_02		113040
+	481610977	mus_4-4_136bpm_loop2_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\9D\{9DF7149A-7C42-B6FE-EE10-78C4D8E09C31}.wem		\Interactive Music Hierarchy\Default Work Unit\Music2\Loop2\mus_4-4_136bpm_loop2_lp\mus_4-4_136bpm_loop2_lp		1355392
+	494020721	sfx_SpeedUp_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\AD\{AD0569C0-4923-376F-F0A8-CBC138C09954}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_SpeedUp\sfx_SpeedUp_nl_01		225980
+	545942747	mus_4-4_136bpm_loop5_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\38\{38BB3AED-DC29-309F-0DB8-33C2111B0316}.wem		\Interactive Music Hierarchy\Default Work Unit\Music6\Loop5\mus_4-4_136bpm_loop5_lp\mus_4-4_136bpm_loop5_lp		2710688
+	549390272	mus_4-4_136bpm_loop4_lp	E:\_Github\ToJamUnity\ToJamWwise\.cache\AA\{AA6C6B29-E070-625E-5489-B4DBC5F05B9B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music4\Loop4\mus_4-4_136bpm_loop4_lp\mus_4-4_136bpm_loop4_lp		1355392
+	604492856	sfx_SlowDown_nl_02	E:\_Github\ToJamUnity\ToJamWwise\.cache\89\{897C3D0E-E88B-25FF-607D-3A52EB958AB1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_SlowDown\sfx_SlowDown_nl_02		234032
 	606031792	sfx_CalibrationCelebration_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\94\{94F051CB-FDB5-27BF-F5E9-E8A29A2F1297}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_PlayerWins\sfx_CalibrationCelebration_nl		759248
-	704715968	mus_4-4_136bpm_transition1_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\5A\{5AA0B49A-6902-DD28-6AB9-6D6356BF254B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music5\Transition1\mus_4-4_136bpm_transition1_nl		677744
-	789861466	mus_4-4_136bpm_transition2_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\4E\{4E03E9A8-FEB6-B345-BC72-6F4DEC47895F}.wem		\Interactive Music Hierarchy\Default Work Unit\Music8\Transition2\mus_4-4_136bpm_transition2_nl		677744
-	853036527	mus_4-4_136bpm_transition3_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\B3\{B3C1A634-8787-BC32-9374-7B1C321A1B84}.wem		\Interactive Music Hierarchy\Default Work Unit\Music9\Transition3\mus_4-4_136bpm_transition3_nl		677744
+	704715968	mus_4-4_136bpm_transition1_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\5A\{5AA0B49A-6902-DD28-6AB9-6D6356BF254B}.wem		\Interactive Music Hierarchy\Default Work Unit\Music9\Transition1\mus_4-4_136bpm_transition1_nl		677744
+	709173291	sfx_SpeedUp_nl_03	E:\_Github\ToJamUnity\ToJamWwise\.cache\B3\{B38909B7-0D7E-5380-30FF-09F9A6E004D2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_SpeedUp\sfx_SpeedUp_nl_03		311600
+	725292117	sfx_SlowDown_nl_01	E:\_Github\ToJamUnity\ToJamWwise\.cache\C0\{C0734BAD-B644-5832-C561-31027D50740B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_SlowDown\sfx_SlowDown_nl_01		283384
+	789861466	mus_4-4_136bpm_transition2_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\4E\{4E03E9A8-FEB6-B345-BC72-6F4DEC47895F}.wem		\Interactive Music Hierarchy\Default Work Unit\Music3\Transition2\mus_4-4_136bpm_transition2_nl		677744
+	853036527	mus_4-4_136bpm_transition3_nl	E:\_Github\ToJamUnity\ToJamWwise\.cache\B3\{B3C1A634-8787-BC32-9374-7B1C321A1B84}.wem		\Interactive Music Hierarchy\Default Work Unit\Music1\Transition3\mus_4-4_136bpm_transition3_nl		677744
+	956512538	sfx_SlowDown_nl_03	E:\_Github\ToJamUnity\ToJamWwise\.cache\D5\{D573797E-F751-751A-4263-43066B9BD78B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_SlowDown\sfx_SlowDown_nl_03		239344
+	1047610202	sfx_Stop_nl_03	E:\_Github\ToJamUnity\ToJamWwise\.cache\5A\{5A6ABE77-3F88-F783-E97A-62D5F60C7E55}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice\sfx_Stop\sfx_Stop_nl_03		169508
 
