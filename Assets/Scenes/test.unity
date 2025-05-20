@@ -918,7 +918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player0Color: {r: 1, g: 0.21960784, b: 0.28627452, a: 1}
   player1Color: {r: 0.10980392, g: 0.7647059, b: 0.8862745, a: 1}
-  winScore: 100
+  winScore: 30
   gameOverDelay: 2
 --- !u!1001 &278247416
 PrefabInstance:
@@ -1102,13 +1102,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistentSpawnInterval: 3
-  normalSpawnInterval: 3
+  normalSpawnInterval: 6
   persistentItemPrefab: {fileID: 2758930995055915100, guid: 92f4e59470c0f2846ae9d499ac239a4f, type: 3}
-  normalItemPrefabs: []
-  minX: -5
-  maxX: 5
-  minY: -3
-  maxY: 3
+  normalItemPrefabs:
+  - {fileID: 527194565730143497, guid: beb2efd4bed2a764c9f519522b8a4a13, type: 3}
+  - {fileID: 3707816595887093784, guid: fbb80695e9f45824e9b085b33b9cacef, type: 3}
+  - {fileID: 8854212148142615684, guid: 172dd7aea1ebc354ebd668523fecbf2e, type: 3}
+  minX: -8
+  maxX: 8
+  minY: -1
+  maxY: 4
   minDistance: 2
   maxAttempts: 10
   maxNormalItems: 3
