@@ -25,19 +25,13 @@ public class ItemSpawnManager : MonoBehaviour
     private GameObject persistentItemInstance;
     private List<GameObject> normalItems = new List<GameObject>();
 
+    void Update()
+    {
+        TrySpawnPersistentItem();   
+    }
     void Start()
     {
-        StartCoroutine(PersistentItemSpawnLoop());
         StartCoroutine(NormalItemSpawnLoop());
-    }
-
-    IEnumerator PersistentItemSpawnLoop()
-    {
-        while (true)
-        {
-            TrySpawnPersistentItem();
-            yield return new WaitForSeconds(persistentSpawnInterval);
-        }
     }
 
     IEnumerator NormalItemSpawnLoop()

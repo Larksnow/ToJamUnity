@@ -20,14 +20,6 @@ public class CameraShake : MonoBehaviour
         if (main) Destroy(gameObject);
         else main = this;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(Shake());
-        }
-    }
 
     public void TriggerShake()
     {

@@ -76,7 +76,7 @@ public class Killzone : MonoBehaviour
         Player player = other.GetComponent<Player>();
         if (player != null && player.playerID == targetID)
         {
-            Debug.Log("Player entered and was killed.");
+            Debug.Log($"Player{targetID} entered and was killed.");
             CameraShake.main.TriggerShake();
             killzoneCollider.enabled = false;
             player.Die();

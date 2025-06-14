@@ -38,6 +38,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 items[i] = itemData;
                 Debug.Log($"Picked up item: {itemData.name} into slot {i}");
+                item.isPickedUp = true;
                 Destroy(item.gameObject);
                 itemChangeEvent.RaiseEvent(items, this);
                 AudioManager.main.PostEvent("Play_PickUpItem");

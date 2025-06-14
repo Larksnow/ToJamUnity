@@ -1105,7 +1105,6 @@ MonoBehaviour:
   normalItemPrefabs:
   - {fileID: 527194565730143497, guid: beb2efd4bed2a764c9f519522b8a4a13, type: 3}
   - {fileID: 3707816595887093784, guid: fbb80695e9f45824e9b085b33b9cacef, type: 3}
-  - {fileID: 8854212148142615684, guid: 172dd7aea1ebc354ebd668523fecbf2e, type: 3}
   minX: -8
   maxX: 8
   minY: -1
