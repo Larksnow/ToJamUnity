@@ -899,6 +899,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "GameSettings",
+            "id": "a491218f-94e2-4a7a-a065-3830c68e1ce4",
+            "actions": [
+                {
+                    "name": "Restart",
+                    "type": "Button",
+                    "id": "99414531-9718-4db8-947f-f74710cdf4be",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c386eb6e-b64c-440c-9a8b-5832a42544a4",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

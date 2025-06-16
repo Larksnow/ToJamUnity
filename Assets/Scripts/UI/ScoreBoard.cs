@@ -107,5 +107,13 @@ public class Scoreboard : MonoBehaviour
         }
         
         AudioManager.main.PostEvent("Play_PlayerWins");
+        GameManager.main.ShowRestartText();
+        GameManager.main.restartGameEvent.RegisterListener(OnRestartGame);
+    }
+
+    private void OnRestartGame(int delay)
+    {
+        textMesh.text = "0 / 0";
+        GameManager.main.restartGameEvent.UnregisterListener(OnRestartGame);
     }
 }
