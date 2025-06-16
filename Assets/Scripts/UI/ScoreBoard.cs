@@ -95,17 +95,23 @@ public class Scoreboard : MonoBehaviour
         return false;
     }
 
+    [ContextMenu("GameOver")]
+    public void TestGameOver()
+    {
+        GameOver();
+    }
+    
     private void GameOver()
     {
         if (textMesh != null)
         {
             // hardcoded to get winner index
-            string winnerName = scores[0] >=  winScore ? "Red" : "Blue";
-            Color winnerColor = scores[0] >=  winScore ? player0Color : player1Color;
+            string winnerName = scores[0] >= winScore ? "Red" : "Blue";
+            Color winnerColor = scores[0] >= winScore ? player0Color : player1Color;
             string text = $"<color=#{ColorUtility.ToHtmlStringRGB(winnerColor)}>{winnerName}</color>";
             textMesh.text = $"{text} won!";
         }
-        
+
         AudioManager.main.PostEvent("Play_PlayerWins");
         GameManager.main.ShowRestartText();
         GameManager.main.restartGameEvent.RegisterListener(OnRestartGame);
