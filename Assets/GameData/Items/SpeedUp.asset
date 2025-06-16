@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: SpeedUp
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: f7d893f73f5bd134799e58215c994e55, type: 3}
+  analogGlitchEvent: {fileID: 11400000, guid: abd5a91e57bfe7b49bca2e930e33759c, type: 2}

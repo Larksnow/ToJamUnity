@@ -8,6 +8,7 @@ public class TogglePostProcessing : MonoBehaviour
     void Start()
     {
         volume = GetComponent<Volume>();
+        volume.enabled = true;
     }
 
     void Update()
