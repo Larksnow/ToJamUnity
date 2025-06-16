@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Mute
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: c8bed27051f5f69449581f05c46f3ae3, type: 3}
+  digitalGlitchEvent: {fileID: 11400000, guid: 5dc43b40cd0ae594ca26d63fb290ad33, type: 2}

@@ -123,7 +123,7 @@
                 {
                     "name": "",
                     "id": "c578ab96-f6b4-455a-984d-b5eb61664992",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -145,7 +145,7 @@
                 {
                     "name": "",
                     "id": "84d61cc7-2785-4b1d-9d97-532168269612",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -167,7 +167,7 @@
                 {
                     "name": "",
                     "id": "838018ed-d946-42dc-a87b-bdb929259c85",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/3",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -212,15 +212,6 @@
                     "name": "UseItem3",
                     "type": "Button",
                     "id": "dffe476e-3915-49f2-ba8f-3c853658afbf",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Join",
-                    "type": "Button",
-                    "id": "255f1cdc-054f-4f9c-b697-a68a6f4b4340",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -357,28 +348,6 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "UseItem3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "16678093-77eb-474a-8d51-2c77f98d1d82",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Join",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f22b2655-28ca-46f6-b1a0-1d26ee0cbe49",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Join",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -922,6 +891,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Restart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "834aa623-1bca-4ef7-87fb-6c84bc5f6d3d",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Restart",
                     "isComposite": false,
                     "isPartOfComposite": false

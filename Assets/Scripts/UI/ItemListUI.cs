@@ -87,19 +87,19 @@ public class ItemListUI : MonoBehaviour
     Dictionary<string, Dictionary<string, string>> hardcodedBindings = new Dictionary<string, Dictionary<string, string>>()
     {
         { "UseItem1", new Dictionary<string, string> {
-            { "Keyboard_P1", "Q" },
+            { "Keyboard_P1", "1" },
             { "Keyboard_P2", "J" },
             { "Xbox", "X" },
             { "PlayStation", "■" } // Square button
         }},
         { "UseItem2", new Dictionary<string, string> {
-            { "Keyboard_P1", "W" },
+            { "Keyboard_P1", "2" },
             { "Keyboard_P2", "K" },
             { "Xbox", "Y" },
             { "PlayStation", "▲" } // Triangle button
         }},
         { "UseItem3", new Dictionary<string, string> {
-            { "Keyboard_P1", "E" },
+            { "Keyboard_P1", "3" },
             { "Keyboard_P2", "L" },
             { "Xbox", "B" },
             { "PlayStation", "●" } // Circle button

@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: e641ddd3a3ccc9e44b43cf73456afca3, type: 2}
+  isPickedUp: 0
 --- !u!58 &1832257323148298385
 CircleCollider2D:
   m_ObjectHideFlags: 0

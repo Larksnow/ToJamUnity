@@ -4,14 +4,16 @@ public class Item : MonoBehaviour
 {
     public ItemSO itemData;
 
+    public bool isPickedUp = false;  // Prevent multiple pickups
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the object has a PlayerInteraction component
+        if (isPickedUp) return;  // Already picked up, ignore
+
         PlayerInteraction playerInteraction = other.GetComponent<PlayerInteraction>();
-        if (playerInteraction != null) playerInteraction.ItemPickUp(this);
+        if (playerInteraction != null)
+        {
+            playerInteraction.ItemPickUp(this);
+        }
     }
-
-    void Start() { }
-
-    void Update() { }
 }

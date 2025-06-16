@@ -7,7 +7,6 @@ public class ItemSpawnManager : MonoBehaviour
     [Header("Spawn Timing")]
     public float persistentSpawnInterval = 3f;
     public float normalSpawnInterval = 3f;
-    private Coroutine _persistentSpawnLoop;
     private Coroutine _normalSpawnLoop;
 
     [Header("Spawn Prefabs")]
@@ -27,18 +26,19 @@ public class ItemSpawnManager : MonoBehaviour
     private GameObject persistentItemInstance;
     private List<GameObject> normalItems = new List<GameObject>();
 
+    void Update()
+    {
+        TrySpawnPersistentItem();   
+    }
     void Start()
     {
-        _persistentSpawnLoop = StartCoroutine(PersistentItemSpawnLoop());
         _normalSpawnLoop = StartCoroutine(NormalItemSpawnLoop());
     }
 
     // for pausing game or end game
     public void StopSpawning()
     {
-        StopCoroutine(_persistentSpawnLoop);
         StopCoroutine(_normalSpawnLoop);
-        _persistentSpawnLoop =  null;
         _normalSpawnLoop = null;
     }
 
@@ -55,15 +55,6 @@ public class ItemSpawnManager : MonoBehaviour
         
         normalItems.Clear();
         lastNormalItemIndex = -1;
-    }
-
-    IEnumerator PersistentItemSpawnLoop()
-    {
-        while (true)
-        {
-            TrySpawnPersistentItem();
-            yield return new WaitForSeconds(persistentSpawnInterval);
-        }
     }
 
     IEnumerator NormalItemSpawnLoop()

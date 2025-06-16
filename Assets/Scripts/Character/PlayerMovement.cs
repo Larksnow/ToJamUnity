@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections; // Required for IEnumerator
+using System.Collections;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,15 +10,19 @@ public class Player : MonoBehaviour
     public float jumpForce = 5f;
     public float jumpDelay = 0.2f;
     private Vector2 moveInput = Vector2.zero;
-
     public float horizontalDampening = 0.5f;
-
     public GameObject landCloudPrefab;
-    
+    private GameObject currentLandCloud;
+
+    [Header("Ground Check via Raycast")]
+    [SerializeField] private Transform groundCheckPoint;
+    [SerializeField] private float groundCheckDistance = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+
     [Header("State")]
     [SerializeField] private bool _isGrounded;
     public bool IsGrounded { get => _isGrounded; private set => _isGrounded = value; }
-    
+
     private Rigidbody2D rb;
     private Animator animator;
     private Vector3 originalScale;
@@ -27,69 +31,63 @@ public class Player : MonoBehaviour
     public Color[] playerColors;
     public int playerID;
     private PlayerInteraction interaction;
+    private bool wasGroundedLastFrame = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         originalScale = transform.localScale;
         interaction = GetComponent<PlayerInteraction>();
+
         if (outfitRenderer != null && playerID < playerColors.Length)
         {
             outfitRenderer.color = playerColors[playerID];
         }
     }
+
+    void LateUpdate()
+    {
+        transform.rotation = Quaternion.identity;
+    }
+
     void FixedUpdate()
     {
         HandleMovement();
     }
-    
+
     void Update()
     {
+        RaycastGroundCheck();
         HandleJump();
         UpdateAnimationState();
     }
-    
+
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
     }
 
-    public void OnUseItem1()
-    {
-        interaction.UseItem(0);
-    }
+    public void OnUseItem1() => interaction.UseItem(0);
+    public void OnUseItem2() => interaction.UseItem(1);
+    public void OnUseItem3() => interaction.UseItem(2);
 
-    public void OnUseItem2()
-    {
-        interaction.UseItem(1);
-    }
-
-    public void OnUseItem3()
-    {
-        interaction.UseItem(2);
-    }
-
-    
     void HandleMovement()
     {
-        // Apply horizontal movement
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-
         animator.SetFloat("moveSpeed", Mathf.Abs(moveInput.x));
 
-        // Flip character based on movement direction
         if (moveInput.x > 0 && !isFacingRight || moveInput.x < 0 && isFacingRight)
             Flip();
 
         WrapAroundScreen();
     }
-    
+
     void HandleJump()
     {
         if (Input.GetButtonDown("Jump") && IsGrounded)
         {
-            IsGrounded = false; // prevent double jumps
+            IsGrounded = false;
             animator.SetTrigger("Jump");
             StartCoroutine(ApplyJumpForceAfterDelay(jumpDelay));
         }
@@ -97,63 +95,55 @@ public class Player : MonoBehaviour
 
     void UpdateAnimationState()
     {
-        // Jumping/Falling animation states
         if (!IsGrounded)
         {
-            if (rb.linearVelocity.y > 0.1f)
-            {
-                animator.SetBool("IsFalling", false);
-            }
-            else if (rb.linearVelocity.y < -0.1f)
-            {
-                animator.SetBool("IsFalling", true);
-            }
+            animator.SetBool("IsFalling", rb.linearVelocity.y < -0.1f);
         }
         else
         {
             animator.SetBool("IsFalling", false);
         }
     }
-    
+
     void Flip()
     {
         isFacingRight = !isFacingRight;
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void RaycastGroundCheck()
     {
-        if (collision.contacts[0].normal.y > 0.5f)
-        {
-            IsGrounded = true;
-            animator.SetTrigger("Land");
-            Instantiate(landCloudPrefab, transform.position, Quaternion.identity);
-        }
-    }
+        Vector2 origin = groundCheckPoint != null ? groundCheckPoint.position : transform.position;
+        RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, groundCheckDistance, groundLayer);
 
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        IsGrounded = false;
+        IsGrounded = hit.collider != null;
+
+        Debug.DrawRay(origin, Vector2.down * groundCheckDistance, IsGrounded ? Color.green : Color.red);
+
+        if (!wasGroundedLastFrame && IsGrounded)
+        {
+            animator.SetTrigger("Land");
+            if (currentLandCloud != null) Destroy(currentLandCloud);
+            currentLandCloud = Instantiate(landCloudPrefab, transform.position, Quaternion.identity);
+        }
+
+        wasGroundedLastFrame = IsGrounded;
     }
 
     private IEnumerator ApplyJumpForceAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         animator.ResetTrigger("Jump");
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce*3);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * 3);
     }
 
     void WrapAroundScreen()
     {
         Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
 
-        // Horizontal wrap
-        if (viewPos.x > 1f)
-            viewPos.x = 0f;
-        else if (viewPos.x < 0f)
-            viewPos.x = 1f;
+        if (viewPos.x > 1f) viewPos.x = 0f;
+        else if (viewPos.x < 0f) viewPos.x = 1f;
 
-        // Safety check: if player falls below -6 world Y, reset position
         if (transform.position.y < -6f)
         {
             transform.position = Vector3.zero;
@@ -170,5 +160,4 @@ public class Player : MonoBehaviour
         Scoreboard.Instance.AddScore(playerID);
         AudioManager.main.PostEvent("Play_Death");
     }
-
 }

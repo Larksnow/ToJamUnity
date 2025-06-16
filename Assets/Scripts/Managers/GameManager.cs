@@ -21,7 +21,14 @@ public class GameManager : MonoBehaviour
     public IntEventSO restartGameEvent; 
 
     private PlayerInput _playerInput;
-    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
     void Awake()
     {
         // Singleton setup
