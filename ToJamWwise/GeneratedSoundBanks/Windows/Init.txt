@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1127073398	PauseMusic			\Default Work Unit\PauseMusic	
 	1786804762	Damage			\Default Work Unit\Damage	
 
 State	ID	Name	State Group			Notes
+	748895195	None	PauseMusic			
+	979470758	Yes	PauseMusic			
+	1668749452	No	PauseMusic			
 	678209053	Two	Damage			
 	748895195	None	Damage			
 	912956111	Three	Damage			

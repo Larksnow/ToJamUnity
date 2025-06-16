@@ -152,7 +152,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-6</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -897,6 +897,332 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<Folder Name="Voice" ID="{FE610883-2905-4C5B-B739-A13DE936584E}" ShortID="927580003">
+					<ChildrenList>
+						<RandomSequenceContainer Name="sfx_SpeedUp" ID="{56A1C56C-BA2F-4481-A997-48D2D1D30DC5}" ShortID="1044839439">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{698F81B8-94D8-45D0-8620-DAE20BF7F0B8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B9D6B708-035A-4172-9294-58A06F78F9E9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_SpeedUp_nl_01" ID="{CEA1A469-42E2-4433-9CC0-18428008A27D}" ShortID="333794530">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_SpeedUp_nl_01" ID="{3900F14B-40D0-48E3-9A7C-9FA3A110BEBF}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_SpeedUp_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="494020721"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_SpeedUp_nl_01" ID="{3900F14B-40D0-48E3-9A7C-9FA3A110BEBF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SpeedUp_nl_02" ID="{41C892FF-212D-43D5-AD2F-7C08B9DCD80F}" ShortID="350877304">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_SpeedUp_nl_02" ID="{406CE9BC-B268-4431-9B38-3E157598AF74}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_SpeedUp_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="97465444"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_SpeedUp_nl_02" ID="{406CE9BC-B268-4431-9B38-3E157598AF74}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SpeedUp_nl_03" ID="{D073E2E9-8369-4164-B5DB-2EDA872BFB08}" ShortID="571776590">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_SpeedUp_nl_03" ID="{657EE24F-3006-48E3-A454-E4B91A6C16AA}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_SpeedUp_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="709173291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_SpeedUp_nl_03" ID="{657EE24F-3006-48E3-A454-E4B91A6C16AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sfx_SlowDown" ID="{F3D96493-1D98-4651-98F8-3E694441B98F}" ShortID="524035914">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{105543CE-F416-421E-B09E-72A24E1F1683}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8A87C910-F04B-4E88-9B97-7EAA89D62A01}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_SlowDown_nl_01" ID="{148656EA-BCE2-4B9B-94B1-FCD97EA8591B}" ShortID="132096309">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_SlowDown_nl_01" ID="{EB57C5BC-C64D-420C-B63B-7686582CE724}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_SlowDown_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="725292117"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_SlowDown_nl_01" ID="{EB57C5BC-C64D-420C-B63B-7686582CE724}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SlowDown_nl_02" ID="{2592D884-0B93-4533-AE70-00AF937796D9}" ShortID="344960512">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_SlowDown_nl_02" ID="{7827427B-5841-480A-A325-1EC80191981B}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_SlowDown_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="604492856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_SlowDown_nl_02" ID="{7827427B-5841-480A-A325-1EC80191981B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_SlowDown_nl_03" ID="{1D1A20B8-FDC7-45F1-8925-F39876020D26}" ShortID="399955064">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_SlowDown_nl_03" ID="{10B075E2-230C-4AB7-89BC-1A0B2577277F}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_SlowDown_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="956512538"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_SlowDown_nl_03" ID="{10B075E2-230C-4AB7-89BC-1A0B2577277F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sfx_Stop" ID="{12FF02AE-BD2C-4F08-B412-7BC55F2AC943}" ShortID="109188850">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9DDB7DF6-4E20-4631-9515-9D34B97FEA4B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+													<Property Name="Min" Type="Real64" Value="-25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{67189680-245C-4FF2-95BA-5A7840723678}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_Stop_nl_01" ID="{0991B287-E43C-43F1-8A8C-7128137F5874}" ShortID="670822048">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Stop_nl_01" ID="{4241B4EB-C3F4-497D-85EA-21872991218C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_Stop_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="35965008"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Stop_nl_01" ID="{4241B4EB-C3F4-497D-85EA-21872991218C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Stop_nl_02" ID="{F934A439-7CA2-41B2-9E55-B6FDB4D0BBA9}" ShortID="1051808160">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Stop_nl_02" ID="{BD83FA48-04A8-4ECE-8828-F159E6535AB9}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_Stop_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="451747458"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Stop_nl_02" ID="{BD83FA48-04A8-4ECE-8828-F159E6535AB9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Stop_nl_03" ID="{10EA51BF-1E82-468A-83C0-025D5B0098A5}" ShortID="973076153">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Stop_nl_03" ID="{0A643C86-4980-4B5F-9808-FC0ACD2178FE}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_Stop_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1047610202"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Stop_nl_03" ID="{0A643C86-4980-4B5F-9808-FC0ACD2178FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -16,12 +16,16 @@ namespace AK
         static const AkUniqueID PLAY_CHARGEANDSHOOT = 2775409438U;
         static const AkUniqueID PLAY_DEATH = 1172822028U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_MUSICAFTERPAUSE = 3324308619U;
         static const AkUniqueID PLAY_PAUSEMUSIC = 3988929873U;
+        static const AkUniqueID PLAY_PAUSEMUSICRETRIGGER = 1800006U;
         static const AkUniqueID PLAY_PICKUPITEM = 152276835U;
         static const AkUniqueID PLAY_PLAYERWINS = 1521400676U;
         static const AkUniqueID PLAY_SLOWDOWNMUSIC = 2557760338U;
         static const AkUniqueID PLAY_SPEEDUPMUSIC = 3465911149U;
         static const AkUniqueID PLAY_USEITEM = 2229253950U;
+        static const AkUniqueID STATE_PAUSEOFF = 2369115902U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
     namespace STATES
@@ -41,6 +45,18 @@ namespace AK
             } // namespace STATE
         } // namespace DAMAGE
 
+        namespace PAUSEMUSIC
+        {
+            static const AkUniqueID GROUP = 1127073398U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace PAUSEMUSIC
+
     } // namespace STATES
 
     namespace GAME_PARAMETERS
@@ -58,6 +74,11 @@ namespace AK
         static const AkUniqueID SLOWDOWNMUSIC = 2546080279U;
         static const AkUniqueID SPEEDUPMUSIC = 2635112718U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID MUSICMUTESTART = 976651323U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

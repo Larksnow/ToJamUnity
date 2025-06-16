@@ -47,4 +47,10 @@ public class PlayerInteraction : MonoBehaviour
         }
         Debug.Log("Inventory full! Cannot pick up more items.");
     }
+
+    public void ClearItems()
+    {
+        System.Array.Clear(items, 0, items.Length);
+        itemChangeEvent.RaiseEvent(items, this);
+    }
 }

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{7CA4F731-A880-1F82-7B57-0B8BBD1D5252}",
+    "Hash": "{D1D7C337-0F1A-DE4A-AF86-FDD0CBDF146D}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -478,6 +478,32 @@
     ],
     "StateGroups": [
      {
+      "Id": "1127073398",
+      "Name": "PauseMusic",
+      "ObjectPath": "\\States\\Default Work Unit\\PauseMusic",
+      "GUID": "{C4E88FB1-A803-4087-88DF-5EB785D9A992}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PauseMusic\\None",
+        "GUID": "{0B4224E0-7069-4B14-BCFB-EF3C3B64279F}"
+       },
+       {
+        "Id": "979470758",
+        "Name": "Yes",
+        "ObjectPath": "\\States\\Default Work Unit\\PauseMusic\\Yes",
+        "GUID": "{7430ED4D-7004-4E6A-8755-CF1E5649C5FE}"
+       },
+       {
+        "Id": "1668749452",
+        "Name": "No",
+        "ObjectPath": "\\States\\Default Work Unit\\PauseMusic\\No",
+        "GUID": "{0F11F565-098E-49EB-BCA0-41305513061F}"
+       }
+      ]
+     },
+     {
       "Id": "1786804762",
       "Name": "Damage",
       "ObjectPath": "\\States\\Default Work Unit\\Damage",
@@ -524,6 +550,6 @@
     ]
    }
   ],
-  "FileHash": "{1D1389D8-1C76-FC36-40AE-7CB0747C4117}"
+  "FileHash": "{6502042A-6ABA-1B46-6BEB-C5AC796A10F0}"
  }
 }
