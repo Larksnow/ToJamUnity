@@ -3,7 +3,7 @@
   "Project": {
    "Name": "ToJamWwise",
    "GUID": "{11DC37D4-147E-4796-9704-F824065ABD81}",
-   "Generator": "2024.1.3.8749"
+   "Generator": "2024.1.5.8803"
   },
   "CacheRoot": "../../../../ToJamWwise/.cache",
   "Platforms": [
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{BF24028F-42B5-2E6B-9B46-A75965C7CE87}"
+  "FileHash": "{3A944017-BAF6-8065-69ED-B7C579C3CA79}"
  }
 }

@@ -23,6 +23,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="sfx_SpeedUpClock_nl" ID="{B592E67B-0681-4DAA-81DA-177BA3F11D0F}" ShortID="296303497">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -33,6 +40,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="sfx_ClockCountdown30Seconds_nl" ID="{C5CF581B-BEC9-4B37-AA4D-C08DCB66496B}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.69918184984775"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.69918184984775"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>sfx_ClockCountdown30Seconds_nl.wav</AudioFile>
 									<MediaIDList>
@@ -45,6 +57,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_SlowDownClock_nl" ID="{84C80A85-8033-4403-B45B-7DC9B2F9DA36}" ShortID="399968823">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-300</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -55,6 +74,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="sfx_ClockSlowDown_nl" ID="{739C60B9-8C1C-4D5E-B394-CC36A08AF8F0}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.10373017260901"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.10373017260901"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>sfx_ClockSlowDown_nl.wav</AudioFile>
 									<MediaIDList>
@@ -185,6 +209,35 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_Use_nl" ID="{FE4D2454-9112-4D7C-B2D9-8296623488EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_Pause_nl" ID="{61B4D686-79BA-4B77-8EBB-427F69A21C26}" ShortID="891497983">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4E561C6A-D232-4CC0-A3FF-85B26C6770E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_Pause_nl" ID="{E7C64A61-2DDD-4283-AD34-E54AD2D256BF}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_Pause_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="745791888"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_Pause_nl" ID="{E7C64A61-2DDD-4283-AD34-E54AD2D256BF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -786,12 +839,29 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="sfx_MusicMutedAudienceClap" ID="{30C26F8F-5590-473E-9758-5C8C4D232536}" ShortID="104973983">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5A2FD9F2-7BAE-48D9-B85A-E489934388AF}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="40"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{06FD0423-9415-407A-B40C-ACC8F0A334F5}"/>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -804,6 +874,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="sfx_MusicMutedAudienceClap_nl_01" ID="{9BFB2782-B2BC-4770-B378-B388C6D59F29}" ShortID="138164711">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0A325F7A-71E1-4892-A6F5-9BE158B78087}"/>
@@ -829,7 +902,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="sfx_MusicMutedAudienceClap_nl_02" ID="{A32EC5E2-9B97-4217-8DEF-B3864AD81F85}" Platform="Linked"/>
+								<ActiveSource Name="sfx_MusicMutedAudienceClap_nl_01" ID="{9483B06B-B8F4-4DD4-90AC-97E70FE0EEF5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sfx_MusicMutedAudienceClap_nl_02" ID="{4F356874-00DC-4CC0-9D4E-B61EAF9EDB63}" ShortID="27640179">
