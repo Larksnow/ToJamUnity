@@ -221,6 +221,7 @@ MonoBehaviour:
   items: []
   maxHold: 3
   player: {fileID: 0}
+  killzone: {fileID: 11400000, guid: 61ab7173fa187a944bc917f26b7226f3, type: 2}
   itemChangeEvent: {fileID: 0}
 --- !u!114 &4930787843320432893
 MonoBehaviour:

@@ -16,7 +16,7 @@ public class ItemListUI : MonoBehaviour
 
     public void OnItemsChanged(object data)
     {
-        if (data is ItemSO[] items)
+        if (data is ItemSO[] items and not null)
         {
             UpdateImage(items);
         }

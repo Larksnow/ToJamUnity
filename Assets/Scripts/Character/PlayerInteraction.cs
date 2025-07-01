@@ -1,17 +1,20 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[DefaultExecutionOrder(1000)]
 public class PlayerInteraction : MonoBehaviour
 {
     public ItemSO[] items;
     public int maxHold = 3; // Max number of items player can carry
     public Player player;
+    public ItemSO killzone;
     public ObjectEventSO itemChangeEvent;
 
     void Start()
     {
         player = GetComponent<Player>();
         items = new ItemSO[maxHold];
+        ClearItems();
     }
 
     public void UseItem(int index)
@@ -51,6 +54,10 @@ public class PlayerInteraction : MonoBehaviour
     public void ClearItems()
     {
         System.Array.Clear(items, 0, items.Length);
+        for (int i = 0; i < items.Length; i++)
+        {
+            items[i] = killzone;
+        }
         itemChangeEvent.RaiseEvent(items, this);
     }
 }
